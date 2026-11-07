@@ -10,12 +10,6 @@
 
 <p align="center"><a href="https://jedkx.github.io/J-Portfolio/">Portfolio ↗</a> &nbsp; / &nbsp; <a href="https://drive.google.com/file/d/1AgQYEGXntEEDf31rzrcfPjonrO44K5Ao/view">Résumé</a> &nbsp; / &nbsp; <a href="mailto:ccoskun742@gmail.com">Email</a> &nbsp; / &nbsp; <a href="https://www.linkedin.com/in/caner-co%C5%9Fkun/">LinkedIn</a></p>
 
-I build software across the stack, with a soft spot for games, playful interfaces and small computers.
-
-**Working with** C# / ASP.NET Core · TypeScript / React · Python · Go · C/C++
-
-### Selected work
-
 <div>
 <picture>
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-top-mobile-dark.svg?v=51dc764fcbc1">
@@ -63,20 +57,20 @@ I build software across the stack, with a soft spot for games, playful interface
 </picture>
 </div>
 
-### Contribution trail
-
-<picture>
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-static-dark.svg?v=942c64bd13d8">
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-static-light.svg?v=64f6ac7ede7e">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-dark.svg?v=518033c45e77">
-  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-light.svg?v=980612c8801c" alt="My GitHub contribution calendar, eaten by a snake. Generated with Platane/snk." width="900">
-</picture>
-
-### Recent work
-
+<p>
 <picture>
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/activity-mobile-dark.svg?v=88b35133c9a1">
   <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/activity-mobile-light.svg?v=1bf6317950b2">
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/activity-dark.svg?v=3f43d263b651">
   <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/activity-light.svg?v=a424c9303549" alt="Most recently pushed public repositories and their actual push dates." width="900">
 </picture>
+</p>
+
+<p>
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-static-dark.svg?v=d7943cd12158">
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-static-light.svg?v=d91ec4a1b32f">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-dark.svg?v=6a474f2405b5">
+  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-light.svg?v=e6e608ea015d" alt="Contribution trail — my GitHub contribution calendar, eaten by a snake. Generated with Platane/snk." width="900">
+</picture>
+</p>

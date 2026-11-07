@@ -163,21 +163,11 @@ ${picture('header','Caner Coşkun — full-stack developer. Animated terminal wi
 
 <p align="center"><a href="${profile.portfolio}">Portfolio ↗</a> &nbsp; / &nbsp; <a href="${profile.cv}">Résumé</a> &nbsp; / &nbsp; <a href="mailto:${profile.email}">Email</a> &nbsp; / &nbsp; <a href="https://www.linkedin.com/in/caner-co%C5%9Fkun/">LinkedIn</a></p>
 
-I build software across the stack, with a soft spot for games, playful interfaces and small computers.
-
-**Working with** C# / ASP.NET Core · TypeScript / React · Python · Go · C/C++
-
-### Selected work
-
 <div>\n${projectTerminal}\n</div>
 
-### Contribution trail
+<p>\n${picture('activity','Most recently pushed public repositories and their actual push dates.',900,true)}\n</p>
 
-${picture('snake','My GitHub contribution calendar, eaten by a snake. Generated with Platane/snk.',900)}
-
-### Recent work
-
-${picture('activity','Most recently pushed public repositories and their actual push dates.',900,true)}
+<p>\n${picture('snake','Contribution trail — my GitHub contribution calendar, eaten by a snake. Generated with Platane/snk.',900)}\n</p>
 `;
 await writeFile(new URL('README.md',root),readme);
 console.log(`Rendered profile, one project neofetch, theme/mobile variants; resident uses ${new Set(sequence.map(s=>s.frame)).size} approved poses.`);

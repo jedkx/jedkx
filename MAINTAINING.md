@@ -39,6 +39,12 @@ contribution calendar. Both themes use the profile accent. Static alternatives
 are selected when the visitor prefers reduced motion. The local style-snake adapter removes
 the accumulation bar, adds six tail segments as meals are collected, and briefly
 highlights the head on a bite. The original route and contribution data stay intact.
+Outside travel lanes are folded onto the calendar edges for the entire body,
+including the growing tail. Asset checks reject any segment leaving the grid.
+The head has small blinking eyes and eaten cells briefly show an outline.
+The calendar uses the same terminal frame as the other panels. Keep the README
+free of repeated introductory text and external section headings; panel chrome
+provides the hierarchy, with recent work followed by the contribution calendar.
 
 ## Visual checks
 
