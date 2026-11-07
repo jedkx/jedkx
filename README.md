@@ -72,10 +72,10 @@ A Go service that persists webhook events and delivers them asynchronously, with
 My contribution calendar, played back as Breakout. [Play the real paddle game on my site ↗](https://jedkx.github.io/J-Portfolio/)
 
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-static-dark.svg?v=63ed11e382cf">
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-static-light.svg?v=707d183fa3fc">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-dark.svg?v=705a98b5eefb">
-  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-light.svg?v=86985f5d1ae1" alt="Animated Breakout replay generated from my GitHub contribution calendar." width="900">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-static-dark.svg?v=481bd7067735">
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-static-light.svg?v=6f6232127cfd">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-dark.svg?v=89e96a08ae28">
+  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-light.svg?v=2b6730215d89" alt="Animated Breakout replay generated from my GitHub contribution calendar." width="900">
 </picture>
 
 <details>
