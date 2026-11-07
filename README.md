@@ -69,9 +69,9 @@
 
 <p>
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-static-dark.svg?v=aa4d12cf5366">
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-static-light.svg?v=63245d4a74b9">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-dark.svg?v=7cc9eb04678e">
-  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-light.svg?v=8ba9848d69f6" alt="Contribution trail — my GitHub contribution calendar, eaten by a snake. Generated with Platane/snk." width="900">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-static-dark.svg?v=f3198dc7988b">
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-static-light.svg?v=76eaf6658525">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-dark.svg?v=29fe91523464">
+  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-light.svg?v=dec57d58abdd" alt="Contribution trail — my GitHub contribution calendar, eaten by a snake. Generated with Platane/snk." width="900">
 </picture>
 </p>
