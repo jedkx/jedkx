@@ -48,10 +48,10 @@ I build software across the stack, with a soft spot for games, playful interface
 My contribution calendar, played back as Breakout. [Play the real paddle game on my site ↗](https://jedkx.github.io/J-Portfolio/)
 
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-static-dark.svg?v=2aec794edfe4">
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-static-light.svg?v=c3a0b91e709d">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-dark.svg?v=b1946188e186">
-  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-light.svg?v=f29d50d7f8a1" alt="Animated Breakout replay generated from my GitHub contribution calendar." width="900">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-static-dark.svg?v=cf6bfe37e241">
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-static-light.svg?v=2a64728ff205">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-dark.svg?v=e306452c9a89">
+  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-light.svg?v=e5e0002be2b9" alt="Animated Breakout replay generated from my GitHub contribution calendar." width="900">
 </picture>
 
 ### Recent work
