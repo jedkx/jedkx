@@ -59,7 +59,7 @@ const sequence=[{frame:0,ms:2400},...Array.from({length:9},(_,i)=>({frame:i+1,ms
 const total=sequence.reduce((n,s)=>n+s.ms,0);
 const timeOf=frame=>sequence.slice(0,sequence.findIndex(s=>s.frame===frame)).reduce((n,s)=>n+s.ms,0)/total;
 function snack(mobile){
-  const start=timeOf(26),bite=timeOf(29),from=mobile?'394 294':'826 205',to=mobile?'317 294':'748 181';
+  const start=timeOf(26),bite=timeOf(29),from=mobile?'394 235':'850 128',to=mobile?'329 235':'786 128';
   const keys=`0;${start};${bite};${bite+.0001};1`;
   return `<rect class="snack" x="-3" y="-3" width="6" height="6" fill="${profile.accent}" opacity="0"><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="${keys}" calcMode="discrete" dur="${total}ms" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="${from};${from};${to};${to};${to}" keyTimes="${keys}" dur="${total}ms" repeatCount="indefinite"/></rect>`;
 }
@@ -73,21 +73,20 @@ function resident(x,y,scale) {
 const text=(x,y,value,size=12,color='#e6edf3',extra='')=>`<text x="${x}" y="${y}" fill="${color}" font-size="${size}" ${extra}>${xml(value)}</text>`;
 const svg=(w,h,body,label,extra='')=>`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" role="img" aria-labelledby="title" font-family="${mono}" ${extra}><title id="title">${xml(label)}</title>${body}</svg>\n`;
 function header(theme,mobile=false) {
-  const p=palettes[theme],w=mobile?440:900,h=mobile?350:300;
-  const left=mobile?28:44;
+  const p=palettes[theme],w=mobile?440:900,h=mobile?270:174;
+  const left=28;
   const styles=`<style>.line{opacity:0;animation:reveal .6s ease forwards}.l1{animation-delay:.15s}.l2{animation-delay:.45s}.l3{animation-delay:.75s}.cursor{animation:blink 1.15s steps(1) infinite}.resident-still{display:none}@keyframes reveal{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}@keyframes blink{50%{opacity:0}}@media(prefers-reduced-motion:reduce){.line{animation:none;opacity:1}.cursor{animation:none}.resident-motion{display:none}.resident-still{display:inline}.snack{display:none}}</style>`;
-  let body=`${styles}<rect x=".5" y=".5" width="${w-1}" height="${h-1}" rx="12" fill="${p.bg}" stroke="${p.rule}"/><path d="M1 45H${w-1}" stroke="${p.rule}"/>${text(left,28,'caner@jedkx:~',12,p.muted)}${text(w-28,28,'●',10,profile.accent,'text-anchor="end"')}`;
-  body+=`<g class="line l1">${text(left,83,'$ whoami',12,profile.accent)}</g>`;
+  let body=`${styles}<rect x=".5" y=".5" width="${w-1}" height="${h-1}" rx="9" fill="${p.bg}" stroke="${p.rule}"/><path d="M1 34H${w-1}" stroke="${p.rule}"/>${text(left,21,'caner@jedkx:~',11,p.muted)}${text(w-28,21,'●',9,profile.accent,'text-anchor="end"')}`;
+  body+=`<g class="line l1">${text(left,mobile?66:62,'$ whoami',12,profile.accent)}</g>`;
   if(mobile){
-    body+=`<g class="line l2">${text(left,131,'CANER COŞKUN',38,p.fg,'font-family="Arial,Helvetica,sans-serif" font-weight="800" letter-spacing="-1.4"')}</g>`;
-    body+=`<g class="line l3">${text(left,169,'Full-stack developer',15,p.fg)}${text(left,194,'Ankara, Türkiye',12,p.muted)}${text(left,246,'$ hello friend',11,profile.accent)}<rect class="cursor" x="132" y="258" width="7" height="12" fill="${profile.accent}"/></g>`;
-    body+=`<rect x="220" y="218" width="194" height="108" rx="8" fill="#070707"/>${resident(249,232,2)}`;
-    body+=text(left,316,'software / games',10,p.muted);
+    body+=`<g class="line l2">${text(left,104,'CANER COŞKUN',38,p.fg,'font-family="Arial,Helvetica,sans-serif" font-weight="800" letter-spacing="-1.4"')}</g>`;
+    body+=`<g class="line l3">${text(left,139,'Full-stack developer',15,p.fg)}${text(left,160,'Ankara, Türkiye',12,p.muted)}${text(left,210,'$ hello friend',11,profile.accent)}<rect class="cursor" x="132" y="200" width="7" height="12" fill="${profile.accent}"/></g>`;
+    body+=`<rect x="246" y="170" width="166" height="88" rx="8" fill="#070707"/>${resident(261,174,2)}`;
+    body+=text(left,244,'software / games',10,p.muted);
   }else{
-    body+=`<g class="line l2">${text(left,143,'CANER COŞKUN',57,p.fg,'font-family="Arial,Helvetica,sans-serif" font-weight="800" letter-spacing="-2"')}</g>`;
-    body+=`<g class="line l3">${text(left,183,'Full-stack developer · Ankara, Türkiye',15,p.fg)}${text(left,220,'software / games / embedded systems',12,p.muted)}</g>`;
-    body+=`<path d="M${left} 246H${w-left}" stroke="${p.rule}"/>${text(left,276,'C# / TypeScript / Python / Go / C++',11,p.muted)}${text(w-left,276,'hello friend',11,profile.accent,'text-anchor="end"')}<rect class="cursor" x="${w-left+8}" y="266" width="6" height="11" fill="${profile.accent}"/>`;
-    body+=`<rect x="640" y="82" width="216" height="140" rx="8" fill="#070707"/>${resident(663,104,2.5)}`;
+    body+=`<g class="line l2">${text(left,110,'CANER COŞKUN',44,p.fg,'font-family="Arial,Helvetica,sans-serif" font-weight="800" letter-spacing="-1.5"')}</g>`;
+    body+=`<g class="line l3">${text(left,143,'Full-stack developer · Ankara, Türkiye',15,p.fg)}${text(520,143,'hello friend',11,profile.accent)}<rect class="cursor" x="606" y="133" width="6" height="11" fill="${profile.accent}"/></g>`;
+    body+=`<rect x="700" y="52" width="172" height="100" rx="8" fill="#070707"/>${resident(718,64,2)}`;
   }
   return svg(w,h,body+snack(mobile),'Caner Coşkun. Full-stack developer in Ankara. Software, games and embedded systems.');
 }
@@ -100,26 +99,25 @@ function terminalFrame(w,h,p,path){
   return `<rect x=".5" y=".5" width="${w-1}" height="${h-1}" rx="9" fill="${p.bg}" stroke="${p.rule}"/><path d="M9 .5H${w-9}Q${w-.5} .5 ${w-.5} 9V34H.5V9Q.5 .5 9 .5Z" fill="${p.panel}"/><path d="M1 34H${w-1}" stroke="${p.rule}"/>${[profile.accent,p.rule,p.muted].map((c,i)=>`<circle cx="${17+i*12}" cy="17" r="3" fill="${c}"/>`).join('')}${text(76,21,path,11,p.muted)}${text(w-22,21,'zsh',10,p.muted,'text-anchor="end"')}`;
 }
 function neofetch(theme,mobile=false){
-  const p=palettes[theme],w=mobile?440:900,h=mobile?1036:696;
+  const p=palettes[theme],w=mobile?440:900,h=mobile?1036:440;
   const ascii=['   _____    _____','  / ____|  / ____|',' | |      | |',' | |      | |',' | |____  | |____','  \\_____|  \\_____|'];
-  const logo=ascii.map((line,i)=>text(mobile?28:36,(mobile?146:175)+i*(mobile?12:23),line,mobile?10:18,profile.accent,'xml:space="preserve"')).join('');
+  const logo=ascii.map((line,i)=>text(mobile?28:36,(mobile?146:112)+i*(mobile?12:17),line,mobile?10:15,profile.accent,'xml:space="preserve"')).join('');
   const identity=mobile
     ? `${text(190,147,'jedkx@github',20,p.fg,'font-weight="700"')}${text(190,177,'04 / SELECTED',12,p.muted)}`
-    : `${text(286,107,'jedkx@github',17,p.fg,'font-weight="700"')}${text(286,126,'────────────────────────',13,p.rule)}${text(129,342,'PUBLIC WORK',11,p.muted,'text-anchor="middle"')}${text(129,368,'04 selected projects',12,p.fg,'text-anchor="middle"')}`;
-  const swatches=['#432327','#854047',profile.accent,p.muted,p.fg].map((c,i)=>`<rect x="${(mobile?190:76)+i*23}" y="${mobile?195:391}" width="23" height="12" fill="${c}"/>`).join('');
+    : `${text(286,83,'jedkx@github',17,p.fg,'font-weight="700"')}${text(286,98,'────────────────────────',13,p.rule)}`;
+  const swatches=['#432327','#854047',profile.accent,p.muted,p.fg].map((c,i)=>`<rect x="${(mobile?190:76)+i*23}" y="${mobile?195:216}" width="23" height="12" fill="${c}"/>`).join('');
   const rows=profile.projects.map((project,i)=>{
-    const x=mobile?28:286,y=(mobile?280:160)+i*(mobile?108:78);
+    const x=mobile?28:286,y=(mobile?280:132)+i*(mobile?108:70);
     const summary=wrap(project.neofetchSummary,mobile?34:64);
     if(summary.length>(mobile?2:1))throw Error('Neofetch summary is too long: '+project.name);
     return `${text(x,y,project.title,mobile?22:19,profile.accent,'font-weight="700"')}${summary.map((line,n)=>text(x,y+(mobile?25:23)+n*22,line,mobile?17:14,p.fg)).join('')}${text(x,y+(mobile?73:45),project.stack,mobile?14:12,p.muted)}`;
   }).join('');
   const selected=repos.filter(r=>!r.fork&&!r.archived&&r.name!==profile.username&&r.pushed_at).sort((a,b)=>b.pushed_at.localeCompare(a.pushed_at)).slice(0,3);
-  const recent=text(28,mobile?738:490,'$ ls -lt ~/work',mobile?16:13,profile.accent)+selected.map((r,i)=>{
-    const y=(mobile?778:527)+i*(mobile?76:36);
-    return text(28,y,r.name,mobile?19:15,p.fg)+text(mobile?28:w-28,mobile?y+26:y,r.pushed_at.slice(0,10),mobile?14:12,p.muted,mobile?'':'text-anchor="end"');
+  const recent=text(28,mobile?738:254,'$ ls -lt ~/work',mobile?16:12,profile.accent)+selected.map((r,i)=>{
+    const y=(mobile?778:282)+i*(mobile?76:44);
+    return text(28,y,r.name,mobile?19:14,p.fg)+text(28,y+(mobile?26:17),r.pushed_at.slice(0,10),mobile?14:11,p.muted);
   }).join('');
-  const divider=mobile?706:459;
-  const footer=`<path d="M28 ${divider}H${w-28}" stroke="${p.rule}"/>${recent}<path d="M28 ${h-47}H${w-28}" stroke="${p.rule}"/>${text(28,h-23,'$',mobile?16:13,profile.accent)}<rect class="caret" x="45" y="${h-35}" width="7" height="13" fill="${profile.accent}"/>`;
+  const footer=`${mobile?`<path d="M28 706H${w-28}" stroke="${p.rule}"/>`:''}${recent}<path d="M28 ${h-40}H${w-28}" stroke="${p.rule}"/>${text(28,h-18,'$',mobile?16:13,profile.accent)}<rect class="caret" x="45" y="${h-30}" width="7" height="13" fill="${profile.accent}"/>`;
   const style='<style>.caret{animation:blink 1.4s steps(1) infinite}@keyframes blink{50%{opacity:0}}@media(prefers-reduced-motion:reduce){.caret{animation:none}}</style>';
   return svg(w,h,style+terminalFrame(w,h,p,'~/work — project index')+text(28,72,'$ neofetch',mobile?17:14,profile.accent)+logo+identity+swatches+rows+footer,'Selected projects: '+profile.projects.map(p=>p.title+'. '+p.neofetchSummary+' '+p.stack).join('; '));
 }
@@ -134,7 +132,7 @@ for(const theme of Object.keys(palettes)){
   await writeFile(new URL(`assets/header-mobile-${theme}.svg`,root),header(theme,true));
     for(const mobile of [false,true]){
       const full=neofetch(theme,mobile),w=mobile?440:900;
-      const cuts=mobile?[0,252,360,468,576,697,1036]:[0,138,216,294,372,450,696];
+      const cuts=mobile?[0,252,360,468,576,697,1036]:[0,110,180,250,320,395,440];
       const parts=['top',...profile.projects.map(p=>p.name.toLowerCase()),'bottom'];
       for(let i=0;i<parts.length;i++){
         const h=cuts[i+1]-cuts[i];

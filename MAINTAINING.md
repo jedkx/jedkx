@@ -64,6 +64,9 @@ push dates, a CC ASCII mark
 and their stacks. A mobile variant keeps the project list readable. Six aligned
 SVG strips form one terminal: header, four linked project rows, and footer. Each
 row is wrapped in an ordinary HTML link because SVG image internals cannot open links.
-Recent work is rendered inside the terminal footer slice, below the project list.
-There is no separate activity panel or activity asset. Mobile keeps the dates
-below repository names; desktop aligns them at the right.
+Recent work sits below the CC mark in the left column on desktop, alongside
+the project list. On mobile it stays below the projects with readable name/date
+rows. There is no separate activity panel or activity asset. Desktop hero and
+neofetch are 174px and 440px in SVG coordinates; mobile remains a stacked layout.
+The snake keeps its existing 900×214 viewport, geometry and animation. Resident
+poses retain integer pixel scaling; only placement and snack coordinates change.
