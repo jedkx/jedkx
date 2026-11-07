@@ -100,7 +100,7 @@ function terminalFrame(w,h,p,path){
   return `<rect x=".5" y=".5" width="${w-1}" height="${h-1}" rx="9" fill="${p.bg}" stroke="${p.rule}"/><path d="M9 .5H${w-9}Q${w-.5} .5 ${w-.5} 9V34H.5V9Q.5 .5 9 .5Z" fill="${p.panel}"/><path d="M1 34H${w-1}" stroke="${p.rule}"/>${[profile.accent,p.rule,p.muted].map((c,i)=>`<circle cx="${17+i*12}" cy="17" r="3" fill="${c}"/>`).join('')}${text(76,21,path,11,p.muted)}${text(w-22,21,'zsh',10,p.muted,'text-anchor="end"')}`;
 }
 function neofetch(theme,mobile=false){
-  const p=palettes[theme],w=mobile?440:900,h=mobile?756:506;
+  const p=palettes[theme],w=mobile?440:900,h=mobile?1036:696;
   const ascii=['   _____    _____','  / ____|  / ____|',' | |      | |',' | |      | |',' | |____  | |____','  \\_____|  \\_____|'];
   const logo=ascii.map((line,i)=>text(mobile?28:36,(mobile?146:175)+i*(mobile?12:23),line,mobile?10:18,profile.accent,'xml:space="preserve"')).join('');
   const identity=mobile
@@ -113,22 +113,15 @@ function neofetch(theme,mobile=false){
     if(summary.length>(mobile?2:1))throw Error('Neofetch summary is too long: '+project.name);
     return `${text(x,y,project.title,mobile?22:19,profile.accent,'font-weight="700"')}${summary.map((line,n)=>text(x,y+(mobile?25:23)+n*22,line,mobile?17:14,p.fg)).join('')}${text(x,y+(mobile?73:45),project.stack,mobile?14:12,p.muted)}`;
   }).join('');
+  const selected=repos.filter(r=>!r.fork&&!r.archived&&r.name!==profile.username&&r.pushed_at).sort((a,b)=>b.pushed_at.localeCompare(a.pushed_at)).slice(0,3);
+  const recent=text(28,mobile?738:490,'$ ls -lt ~/work',mobile?16:13,profile.accent)+selected.map((r,i)=>{
+    const y=(mobile?778:527)+i*(mobile?76:36);
+    return text(28,y,r.name,mobile?19:15,p.fg)+text(mobile?28:w-28,mobile?y+26:y,r.pushed_at.slice(0,10),mobile?14:12,p.muted,mobile?'':'text-anchor="end"');
+  }).join('');
   const divider=mobile?706:459;
-  const footer=`<path d="M28 ${divider}H${w-28}" stroke="${p.rule}"/>${text(28,h-23,'$ ls ~/work',mobile?16:13,profile.accent)}<rect class="caret" x="${mobile?143:125}" y="${h-35}" width="7" height="13" fill="${profile.accent}"/>`;
+  const footer=`<path d="M28 ${divider}H${w-28}" stroke="${p.rule}"/>${recent}<path d="M28 ${h-47}H${w-28}" stroke="${p.rule}"/>${text(28,h-23,'$',mobile?16:13,profile.accent)}<rect class="caret" x="45" y="${h-35}" width="7" height="13" fill="${profile.accent}"/>`;
   const style='<style>.caret{animation:blink 1.4s steps(1) infinite}@keyframes blink{50%{opacity:0}}@media(prefers-reduced-motion:reduce){.caret{animation:none}}</style>';
   return svg(w,h,style+terminalFrame(w,h,p,'~/work — project index')+text(28,72,'$ neofetch',mobile?17:14,profile.accent)+logo+identity+swatches+rows+footer,'Selected projects: '+profile.projects.map(p=>p.title+'. '+p.neofetchSummary+' '+p.stack).join('; '));
-}
-function activity(theme,mobile=false){
-  const p=palettes[theme],w=mobile?440:900,h=mobile?490:326;
-  const selected=repos.filter(r=>!r.fork&&!r.archived&&r.name!==profile.username&&r.pushed_at).sort((a,b)=>b.pushed_at.localeCompare(a.pushed_at)).slice(0,3);
-  const top=mobile?126:112,step=mobile?112:68;
-  const rows=selected.map((r,i)=>{
-    const y=top+i*step;
-    const area=profile.projects.find(project=>project.name===r.name)?.category||r.language||'PUBLIC REPOSITORY';
-    return `<circle cx="32" cy="${y-6}" r="${i?4:6}" fill="${i?p.bg:profile.accent}" stroke="${profile.accent}" stroke-width="2"/>${text(56,y,r.name,mobile?21:18,p.fg,'font-weight="600"')}${text(mobile?56:w-28,mobile?y+28:y,r.pushed_at.slice(0,10),mobile?15:13,profile.accent,mobile?'':'text-anchor="end"')}${text(56,y+(mobile?54:25),area,mobile?13:11,p.muted)}`;
-  }).join('');
-  const body=`${text(24,69,'$ ls -lt ~/work',mobile?17:14,profile.accent)}<path d="M32 ${top-6}V${top+(selected.length-1)*step-6}" stroke="${profile.accent}" stroke-opacity=".35" stroke-width="2"/>${rows}<path d="M24 ${h-47}H${w-24}" stroke="${p.rule}"/>${text(24,h-22,'LAST PUSH / PUBLIC REPOSITORIES',mobile?12:11,p.muted)}`;
-  return svg(w,h,terminalFrame(w,h,p,'~/activity')+body,'Most recently pushed public repositories, with actual push dates. This is repository metadata, not a commit log.');
 }
 const versions=new Map();
 const asset=name=>`https://raw.githubusercontent.com/${profile.username}/${profile.username}/main/assets/${name}?v=${versions.get(name)}`;
@@ -139,11 +132,9 @@ await mkdir(new URL('assets/',root),{recursive:true});
 for(const theme of Object.keys(palettes)){
   await writeFile(new URL(`assets/header-${theme}.svg`,root),header(theme));
   await writeFile(new URL(`assets/header-mobile-${theme}.svg`,root),header(theme,true));
-  await writeFile(new URL(`assets/activity-${theme}.svg`,root),activity(theme));
-  await writeFile(new URL(`assets/activity-mobile-${theme}.svg`,root),activity(theme,true));
     for(const mobile of [false,true]){
       const full=neofetch(theme,mobile),w=mobile?440:900;
-      const cuts=mobile?[0,252,360,468,576,697,756]:[0,138,216,294,372,450,506];
+      const cuts=mobile?[0,252,360,468,576,697,1036]:[0,138,216,294,372,450,696];
       const parts=['top',...profile.projects.map(p=>p.name.toLowerCase()),'bottom'];
       for(let i=0;i<parts.length;i++){
         const h=cuts[i+1]-cuts[i];
@@ -155,7 +146,7 @@ for(const theme of Object.keys(palettes)){
 for(const name of (await readdir(new URL('assets/',root))).filter(n=>n.endsWith('.svg'))){
   versions.set(name,createHash('sha256').update(await readFile(new URL('assets/'+name,root))).digest('hex').slice(0,12));
 }
-const projectTerminal=[picture('work-top','Selected work — neofetch',900,true),...profile.projects.map(p=>`<a href="https://github.com/${profile.username}/${p.name}">\n${picture('work-'+p.name.toLowerCase(),p.title+' — '+p.neofetchSummary+' Open repository.',900,true)}\n</a>`),picture('work-bottom','End of project index',900,true)].map(p=>p.replace(/width="900"/g,'width="900" align="top"')).join('<br>\n');
+const projectTerminal=[picture('work-top','Selected work — neofetch',900,true),...profile.projects.map(p=>`<a href="https://github.com/${profile.username}/${p.name}">\n${picture('work-'+p.name.toLowerCase(),p.title+' — '+p.neofetchSummary+' Open repository.',900,true)}\n</a>`),picture('work-bottom','Recent repository pushes: '+repos.filter(r=>!r.fork&&!r.archived&&r.name!==profile.username&&r.pushed_at).sort((a,b)=>b.pushed_at.localeCompare(a.pushed_at)).slice(0,3).map(r=>r.name+' on '+r.pushed_at.slice(0,10)).join('; ')+'. End of terminal.',900,true)].map(p=>p.replace(/width="900"/g,'width="900" align="top"')).join('<br>\n');
 const readme=`<!-- Generated by scripts/render-assets.mjs. Edit data/profile.json, not this file. -->
 <a href="${profile.portfolio}">
 ${picture('header','Caner Coşkun — full-stack developer. Animated terminal with the original pixel resident.',900,true)}
@@ -165,8 +156,6 @@ ${picture('header','Caner Coşkun — full-stack developer. Animated terminal wi
 
 <div>\n${projectTerminal}\n</div>
 <br>
-
-<p>\n${picture('activity','Most recently pushed public repositories and their actual push dates.',900,true)}\n</p>
 
 <p>\n${picture('snake','Contribution trail — my GitHub contribution calendar, eaten by a snake. Generated with Platane/snk.',900)}\n</p>
 `;

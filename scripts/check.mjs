@@ -8,7 +8,7 @@ for(const match of readme.matchAll(/(?:src|srcset)="([^" ]+)"/g)){
   await access(new URL(local.split('?')[0],root));
 }
 const names=(await readdir(new URL('assets/',root))).filter(n=>n.endsWith('.svg'));
-assert.equal(names.length,36,'Expected headers, six linked neofetch slices, activity and snake alternatives');
+assert.equal(names.length,32,'Expected headers, six linked neofetch slices with activity, and snake alternatives');
 for(const name of names){
   const svg=await readFile(new URL('assets/'+name,root),'utf8');
   assert.match(svg,/<svg\b/); assert.match(svg,/viewBox=/);
@@ -22,6 +22,12 @@ for(const name of names){
       assert.ok(+m[1]>=0&&+m[1]<=maxX&&+m[2]>=0&&+m[2]<=maxY,'Snake must stay inside the calendar');
     }
     assert.doesNotMatch(svg,/<rect class="u /,'Collection bar must remain removed');
+    const route=svg.match(/@keyframes s0\{(.*?)\}\.s\.s0/s)?.[1]+'}';
+    const positions=[...route.matchAll(/([\d.]+)%\{transform:translate\(([\d.]+)px,([\d.]+)px\)\}/g)].filter(m=>+m[1]<=90).map(m=>({x:+m[2],y:+m[3]}));
+    assert.equal(positions.length,cells.length,'Snake must visit every contribution cell');
+    assert.equal(new Set(positions.map(p=>`${p.x},${p.y}`)).size,positions.length,'Snake must never cross its earlier path during a sweep');
+    for(let i=1;i<positions.length;i++)assert.equal(Math.abs(positions[i].x-positions[i-1].x)+Math.abs(positions[i].y-positions[i-1].y),16,'Snake must move between adjacent cells');
+    assert.match(svg,/<g class="snake-loop">/,'Reset must happen inside the fading snake layer');
   }
 }
 assert.match(readme,/Selected work/);

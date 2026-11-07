@@ -36,15 +36,16 @@ The official Platane/snk SVG-only action bundle is pinned by revision and four
 SHA-256 checksums in vendor/snake-source.json. It downloads to ignored .cache
 on demand; no upstream bundle is redistributed. GITHUB_TOKEN reads the real
 contribution calendar. Both themes use the profile accent. Static alternatives
-are selected when the visitor prefers reduced motion. The local style-snake adapter removes
-the accumulation bar, adds six tail segments as meals are collected, and briefly
-highlights the head on a bite. The original route and contribution data stay intact.
-Outside travel lanes are folded onto the calendar edges for the entire body,
-including the growing tail. Asset checks reject any segment leaving the grid.
-The head has small blinking eyes and eaten cells briefly show an outline.
-The calendar uses the same terminal frame as the other panels. Keep the README
-free of repeated introductory text and external section headings; panel chrome
-provides the hierarchy, with recent work followed by the contribution calendar.
+are selected when the visitor prefers reduced motion.
+
+snake-route.mjs replaces the upstream solver route with a one-way sweep through
+adjacent calendar cells. Each cell is visited exactly once. The growing body
+follows that same history; it cannot cross itself or leave the grid. At the end,
+the snake fades out before resetting; it never visibly jumps back across cells.
+Cell disappearance, bite highlights and outlines use the new arrival times.
+The style adapter retains the blinking eyes, bounded growth and terminal frame.
+Checks inspect the emitted SVG route for adjacency, bounds, unique visits and
+complete coverage. The collection bar remains removed.
 
 ## Visual checks
 
@@ -57,8 +58,11 @@ Image URLs point directly to raw.githubusercontent.com and carry content hashes.
 GitHub raw redirects discard arbitrary query strings, so relative raw links
 cannot reliably invalidate cached artwork after a design update.
 
-Selected work is one neofetch terminal with all four projects, a CC ASCII mark
+Selected work is one neofetch terminal with all four projects, recent repository
+push dates, a CC ASCII mark
 and their stacks. A mobile variant keeps the project list readable. Six aligned
 SVG strips form one terminal: header, four linked project rows, and footer. Each
 row is wrapped in an ordinary HTML link because SVG image internals cannot open links.
-Recent work remains a terminal timeline of actual repository push dates.
+Recent work is rendered inside the terminal footer slice, below the project list.
+There is no separate activity panel or activity asset. Mobile keeps the dates
+below repository names; desktop aligns them at the right.

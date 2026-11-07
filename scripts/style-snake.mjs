@@ -1,7 +1,8 @@
-// Keep the upstream route, but replace the collection bar with a growing tail.
+import {calendarRoute} from './snake-route.mjs';
+// Use the actual upstream calendar with a non-intersecting local route.
 export function styleSnake(svg){
-  // Upstream uses an outside lane to travel between cells and reset the loop.
-  // Fold that lane onto the calendar edges for every body segment, not just the head.
+  svg=calendarRoute(svg);
+  // Guard the generated coordinates for every body segment.
   const cells=[...svg.matchAll(/<rect class="c(?: [^"]+)?" x="([\d.]+)" y="([\d.]+)"/g)];
   if(!cells.length)throw Error('Missing contribution grid');
   const maxX=Math.max(...cells.map(c=>+c[1]))-2,maxY=Math.max(...cells.map(c=>+c[2]))-2;
@@ -46,6 +47,6 @@ export function styleSnake(svg){
   }
   const dark=svg.includes('--ce:#161b22'),bg=dark?'#0d1117':'#ffffff',panel=dark?'#10151c':'#f6f8fa',rule=dark?'#30363d':'#d0d7de',muted=dark?'#919ba8':'#59636e';
   const frame=`<rect x="-25.5" y="-73.5" width="899" height="213" rx="9" fill="${bg}" stroke="${rule}"/><path d="M-17 -73.5H865Q873.5 -73.5 873.5 -65V-40H-25.5V-65Q-25.5 -73.5 -17 -73.5Z" fill="${panel}"/><path d="M-25 -40H873" stroke="${rule}"/>${['var(--cs)',rule,muted].map((color,i)=>`<circle cx="${-9+i*12}" cy="-57" r="3" fill="${color}"/>`).join('')}<text x="50" y="-53" fill="${muted}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11">~/contributions</text>`;
-  const animated=svg.replace(/<rect class="u [^"]+"[^>]*\/>/g,'').replace(/viewBox="[^"]+"/,'viewBox="-26 -74 900 214"').replace('width="880"','width="900"').replace('height="192"','height="214"').replace('</style>',css+'</style>'+frame).replace(/<rect class="s s0"([^>]+)\/>/,`${ripples}${tail}<g class="s s0"><rect$1/><circle class="eye" cx="5" cy="5.5" r="1.3"/><circle class="eye second" cx="10.5" cy="5.5" r="1.3"/></g>`);
-  return animated;
+  const animated=svg.replace(/<rect class="u [^"]+"[^>]*\/>/g,'').replace(/viewBox="[^"]+"/,'viewBox="-26 -74 900 214"').replace('width="880"','width="900"').replace('height="192"','height="214"').replace('</style>',css+'</style>'+frame).replace(/<rect class="s s0"([^>]+)\/>/,`<g class="snake-loop">${ripples}${tail}<g class="s s0"><rect$1/><circle class="eye" cx="5" cy="5.5" r="1.3"/><circle class="eye second" cx="10.5" cy="5.5" r="1.3"/></g>`);
+  return animated.replace("</svg>","</g></svg>");
 }
