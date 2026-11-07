@@ -26,12 +26,12 @@ jobs:
         run: node scripts/sync-github.mjs
         env:
           GITHUB_TOKEN: ${{ github.token }}
-      - name: Render profile and project cards
-        run: node scripts/render-assets.mjs
       - name: Generate contribution Breakout
         run: node scripts/generate-arcade.mjs
         env:
           GITHUB_TOKEN: ${{ github.token }}
+      - name: Render profile and project cards
+        run: node scripts/render-assets.mjs
       - name: Check generated assets
         run: node scripts/check.mjs
       - name: Save successful update
