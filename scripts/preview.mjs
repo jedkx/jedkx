@@ -17,7 +17,7 @@ createServer(async(req,res)=>{
     const url=new URL(req.url,'http://localhost');
     if(url.pathname==='/'){
       const theme=url.searchParams.get('theme')==='light'?'light':'dark';
-      const content=html.replaceAll('(prefers-color-scheme: dark)',theme==='dark'?'(min-width: 0px)':'(min-width: 99999px)');
+      const content=html.replaceAll('https://raw.githubusercontent.com/jedkx/jedkx/main/assets/','/assets/').replaceAll('(prefers-color-scheme: dark)',theme==='dark'?'(min-width: 0px)':'(min-width: 99999px)');
       res.writeHead(200,{'Content-Type':'text/html; charset=utf-8'});
       res.end(`<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>jedkx · Profile preview</title><style>${css}</style><body class="${theme}"><header><b>jedkx / profile preview</b><div><span>Rendered with GitHub’s Markdown API</span><a href="/?theme=dark">Dark</a><a href="/?theme=light">Light</a></div></header><main class="layout"><aside class="identity"><img src="https://avatars.githubusercontent.com/jedkx" alt="Caner Coşkun"><div><h1>Caner Coşkun</h1><p>jedkx</p><p class="bio">Full-stack developer<br>Ankara, Türkiye</p></div></aside><article><small>jedkx / README.md</small>${content}</article></main></body></html>`);
       return;

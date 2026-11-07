@@ -2,7 +2,11 @@ import assert from 'node:assert/strict';
 import {readFile,readdir,access} from 'node:fs/promises';
 const root=new URL('../',import.meta.url);
 const readme=await readFile(new URL('README.md',root),'utf8');
-for(const match of readme.matchAll(/(?:src|srcset)="(assets\/[^" ]+)"/g))await access(new URL(match[1].split('?')[0],root));
+for(const match of readme.matchAll(/(?:src|srcset)="([^" ]+)"/g)){
+  const local=match[1].replace('https://raw.githubusercontent.com/jedkx/jedkx/main/','');
+  assert.ok(local.startsWith('assets/'),'Profile images must belong to this repository');
+  await access(new URL(local.split('?')[0],root));
+}
 const names=(await readdir(new URL('assets/',root))).filter(n=>n.endsWith('.svg'));
 assert.equal(names.length,18,'Expected two themes, mobile headers, four project cards, Breakout and static alternatives');
 for(const name of names){

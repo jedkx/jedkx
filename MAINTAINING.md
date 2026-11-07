@@ -8,8 +8,8 @@ Requires Node 24, with no npm install:
 
 ```sh
 node scripts/sync-github.mjs
-node scripts/render-assets.mjs
 node scripts/generate-arcade.mjs
+node scripts/render-assets.mjs
 node scripts/check.mjs
 ```
 
@@ -43,3 +43,7 @@ Open the local preview using `node scripts/preview.mjs`. Check desktop/mobile,
 light/dark, the resident sequence, ordinary project links, and reduced motion.
 README layout is also checked on GitHub before publishing. The local preview
 approximates GitHub's layout and does not replace its sanitizer/theme rendering.
+
+Image URLs point directly to raw.githubusercontent.com and carry content hashes.
+GitHub raw redirects discard arbitrary query strings, so relative raw links
+cannot reliably invalidate cached artwork after a design update.

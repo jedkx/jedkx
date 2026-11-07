@@ -108,7 +108,7 @@ function activity(theme){
   return svg(900,150,`<rect x=".5" y=".5" width="899" height="149" rx="8" fill="${p.bg}" stroke="${p.rule}"/>${text(24,29,'RECENT REPOSITORY UPDATES',11,p.muted)}${selected.map((r,i)=>`${text(24,61+i*32,'›',14,profile.accent)}${text(47,61+i*32,r.name,13,p.fg)}${text(650,61+i*32,r.language||'—',11,p.muted)}${text(875,61+i*32,r.pushed_at.slice(0,10),11,p.muted,'text-anchor="end"')}`).join('')}`,'Recent public repository push dates. Not a live activity feed.');
 }
 const versions=new Map();
-const asset=name=>`assets/${name}?v=${versions.get(name)}`;
+const asset=name=>`https://raw.githubusercontent.com/${profile.username}/${profile.username}/main/assets/${name}?v=${versions.get(name)}`;
 function picture(stem,alt,width=900,mobile=false){
   return `<picture>\n${stem==='breakout'?`  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="${asset('breakout-static-dark.svg')}">\n  <source media="(prefers-reduced-motion: reduce)" srcset="${asset('breakout-static-light.svg')}">\n`:''}${mobile?`  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="${asset(stem+'-mobile-dark.svg')}">\n  <source media="(max-width: 600px)" srcset="${asset(stem+'-mobile-light.svg')}">\n`:''}  <source media="(prefers-color-scheme: dark)" srcset="${asset(stem+'-dark.svg')}">\n  <img src="${asset(stem+'-light.svg')}" alt="${xml(alt)}" width="${width}">\n</picture>`;
 }
