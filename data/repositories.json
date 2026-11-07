@@ -1,5 +1,15 @@
 [
   {
+    "name": "jedkx",
+    "description": "Caner Coşkun — terminal profile, original pixel resident and contribution arcade.",
+    "language": "JavaScript",
+    "html_url": "https://github.com/jedkx/jedkx",
+    "pushed_at": "2026-11-07T20:28:09Z",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false
+  },
+  {
     "name": "J-Portfolio",
     "description": "Engineering-focused portfolio platform with a Docker-first development workflow and a hybrid project feed: curated static case studies are combined with automatically synced public GitHub repositories, including intelligent screenshot resolution from repository README/preview assets.",
     "language": "TypeScript",
