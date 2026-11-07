@@ -164,6 +164,7 @@ ${picture('header','Caner Coşkun — full-stack developer. Animated terminal wi
 <p align="center"><a href="${profile.portfolio}">Portfolio ↗</a> &nbsp; / &nbsp; <a href="${profile.cv}">Résumé</a> &nbsp; / &nbsp; <a href="mailto:${profile.email}">Email</a> &nbsp; / &nbsp; <a href="https://www.linkedin.com/in/caner-co%C5%9Fkun/">LinkedIn</a></p>
 
 <div>\n${projectTerminal}\n</div>
+<br>
 
 <p>\n${picture('activity','Most recently pushed public repositories and their actual push dates.',900,true)}\n</p>
 
