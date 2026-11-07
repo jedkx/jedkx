@@ -1,0 +1,26 @@
+{
+  "repository": "https://github.com/Platane/snk",
+  "revision": "a041d6c27ba561a39f5be9c26a784812765e434b",
+  "files": [
+    {
+      "name": "index.js",
+      "sha256": "6eb3255afe42d7e2d198379e1c380d73205b1d05ad277d7b3c2304830a08831d",
+      "url": "https://raw.githubusercontent.com/Platane/snk/a041d6c27ba561a39f5be9c26a784812765e434b/svg-only/dist/index.js"
+    },
+    {
+      "name": "578.index.js",
+      "sha256": "0afa466edca5a52a707e8ae3626317e82e349ae4c48585f191deb7dcdb0b5217",
+      "url": "https://raw.githubusercontent.com/Platane/snk/a041d6c27ba561a39f5be9c26a784812765e434b/svg-only/dist/578.index.js"
+    },
+    {
+      "name": "642.index.js",
+      "sha256": "fdf179fd90c27c69f9dc5af99248abb1e6ab830576a46b4714d9500296c6f405",
+      "url": "https://raw.githubusercontent.com/Platane/snk/a041d6c27ba561a39f5be9c26a784812765e434b/svg-only/dist/642.index.js"
+    },
+    {
+      "name": "680.index.js",
+      "sha256": "847aa825224ce4159d6f208da7f5cdc58942944b1ed9f48fcc78c1e9669c3ea7",
+      "url": "https://raw.githubusercontent.com/Platane/snk/a041d6c27ba561a39f5be9c26a784812765e434b/svg-only/dist/680.index.js"
+    }
+  ]
+}

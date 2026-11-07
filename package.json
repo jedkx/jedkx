@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node scripts/render-assets.mjs",
     "sync": "node scripts/sync-github.mjs",
-    "arcade": "node scripts/generate-arcade.mjs",
+    "snake": "node scripts/generate-snake.mjs",
     "check": "node scripts/check.mjs",
     "preview": "node scripts/preview.mjs"
   }

@@ -8,7 +8,7 @@ for(const match of readme.matchAll(/(?:src|srcset)="([^" ]+)"/g)){
   await access(new URL(local.split('?')[0],root));
 }
 const names=(await readdir(new URL('assets/',root))).filter(n=>n.endsWith('.svg'));
-assert.equal(names.length,28,'Expected light/dark assets, mobile headers/project cards/activity, and Breakout alternatives');
+assert.equal(names.length,16,'Expected light/dark and mobile headers, project neofetch, activity and snake alternatives');
 for(const name of names){
   const svg=await readFile(new URL('assets/'+name,root),'utf8');
   assert.match(svg,/<svg\b/); assert.match(svg,/viewBox=/);
@@ -17,6 +17,8 @@ for(const name of names){
   assert.ok(Buffer.byteLength(svg)<5_000_000,`${name} exceeds image budget`);
 }
 assert.match(readme,/Selected work/);
+assert.match(readme,/Contribution trail/);
+assert.doesNotMatch(readme,/Breakout|A year, in bricks|assets\/project-/);
 assert.match(readme,/Résumé/);
 assert.doesNotMatch(readme,/TOKEN|SECRET|github_pat_|ghp_/);
 console.log(`Profile references and ${names.length} SVG assets verified.`);

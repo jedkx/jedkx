@@ -16,42 +16,22 @@ I build software across the stack, with a soft spot for games, playful interface
 
 ### Selected work
 
-<p align="center">
-<a href="https://github.com/jedkx/J-Portfolio"><picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-j-portfolio-mobile-dark.svg?v=f07819258967">
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-j-portfolio-mobile-light.svg?v=ee70924de5ab">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-j-portfolio-dark.svg?v=baba352e7b43">
-  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-j-portfolio-light.svg?v=a2107bfa5a8b" alt="J-Portfolio: A terminal-inspired portfolio with particle physics, an original pixel character and a GitHub-powered project feed." width="385">
-</picture></a>
-<a href="https://github.com/jedkx/openground"><picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-openground-mobile-dark.svg?v=fb91763bf78f">
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-openground-mobile-light.svg?v=dc8c2e958d41">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-openground-dark.svg?v=1f0681135d11">
-  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-openground-light.svg?v=31b10e06d5d2" alt="openground: A telemetry platform that connects data sources, streams live measurements and stores them in Postgres." width="385">
-</picture></a>
-<a href="https://github.com/jedkx/DxReportReview"><picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-dxreportreview-mobile-dark.svg?v=dac4f186eff9">
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-dxreportreview-mobile-light.svg?v=d35e6b25375a">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-dxreportreview-dark.svg?v=81abe0d2d4d7">
-  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-dxreportreview-light.svg?v=9c4fdf46efea" alt="DxReportReview: Git-style review for DevExpress report layouts: submit, compare, then approve or reject before merge." width="385">
-</picture></a>
-<a href="https://github.com/jedkx/Relay"><picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-relay-mobile-dark.svg?v=3546ed1890e8">
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-relay-mobile-light.svg?v=3e423411b426">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-relay-dark.svg?v=25d5ad87649a">
-  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-relay-light.svg?v=a989e6fc69a6" alt="Relay: A Go service that persists webhook events and delivers them asynchronously, with retries and attempt logs." width="385">
-</picture></a>
-</p>
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/projects-mobile-dark.svg?v=91e6cb56471f">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/projects-mobile-light.svg?v=de3f1bd5e268">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/projects-dark.svg?v=c22adea25e28">
+  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/projects-light.svg?v=a88c6209267c" alt="Four selected projects in one neofetch terminal." width="900">
+</picture>
 
-### A year, in bricks
+<p align="center"><a href="https://github.com/jedkx/J-Portfolio">J-Portfolio ↗</a> &nbsp; / &nbsp; <a href="https://github.com/jedkx/openground">openground ↗</a> &nbsp; / &nbsp; <a href="https://github.com/jedkx/DxReportReview">DxReportReview ↗</a> &nbsp; / &nbsp; <a href="https://github.com/jedkx/Relay">Relay ↗</a></p>
 
-My contribution calendar, played back as Breakout. [Play the real paddle game on my site ↗](https://jedkx.github.io/J-Portfolio/)
+### Contribution trail
 
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-static-dark.svg?v=cf6bfe37e241">
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-static-light.svg?v=2a64728ff205">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-dark.svg?v=e306452c9a89">
-  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-light.svg?v=e5e0002be2b9" alt="Animated Breakout replay generated from my GitHub contribution calendar." width="900">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-static-dark.svg?v=2d7ca55afe72">
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-static-light.svg?v=d1d2669343a9">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-dark.svg?v=43a6f0490c53">
+  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-light.svg?v=bcd989ec0582" alt="My GitHub contribution calendar, eaten by a snake. Generated with Platane/snk." width="900">
 </picture>
 
 ### Recent work

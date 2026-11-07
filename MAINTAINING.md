@@ -8,14 +8,14 @@ Requires Node 24, with no npm install:
 
 ```sh
 node scripts/sync-github.mjs
-node scripts/generate-arcade.mjs
+node scripts/generate-snake.mjs
 node scripts/render-assets.mjs
 node scripts/check.mjs
 ```
 
-Set `GITHUB_TOKEN` in the environment for exact GraphQL contribution-calendar
-data. Without it the upstream library uses public commit search, which is not
-the full GitHub contribution calendar. Never save a token in a file or SVG.
+Set `GITHUB_TOKEN` in the environment for the real GitHub contribution calendar.
+The snake generator requires it; the scheduled workflow uses the built-in token.
+Never save a token in a file or SVG.
 
 The daily workflow uses the repository's built-in token. Outputs are committed
 only after every generator and asset check succeeds. Failed runs keep the last
@@ -30,12 +30,13 @@ pixel runs into paths; it does not embed externally loaded images. Chewing uses
 neutral eyes, matching the website fix. Edit the original Aseprite source in
 J-Portfolio, export there, then copy the approved atlas and metadata here.
 
-## Arcade source
+## Contribution snake
 
-`vendor/arcade-source.json` pins the official rendering bundle and SHA-256.
-The library is downloaded to ignored `.cache` on demand; it is not redistributed
-in this repository. The upstream Action's analytics/leaderboard wrapper is not
-used. Generated SVGs retain their upstream attribution.
+The official Platane/snk SVG-only action bundle is pinned by revision and four
+SHA-256 checksums in vendor/snake-source.json. It downloads to ignored .cache
+on demand; no upstream bundle is redistributed. GITHUB_TOKEN reads the real
+contribution calendar. Both themes use the profile accent. Static alternatives
+are selected when the visitor prefers reduced motion.
 
 ## Visual checks
 
@@ -48,7 +49,7 @@ Image URLs point directly to raw.githubusercontent.com and carry content hashes.
 GitHub raw redirects discard arbitrary query strings, so relative raw links
 cannot reliably invalidate cached artwork after a design update.
 
-Selected work uses self-contained terminal cards with inline wrapping, so cards
-wrap to a single column on narrow screens. Project descriptions stay inside each
-terminal; mobile SVG variants increase text size. Recent work is a visible
-terminal timeline of repository push dates, not a commit-frequency statistic.
+Selected work is one neofetch terminal with all four projects, a CC ASCII mark
+and their stacks. A mobile variant keeps the project list readable. Ordinary
+links below the image open each repository; SVG image internals are not clickable.
+Recent work remains a terminal timeline of actual repository push dates.

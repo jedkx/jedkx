@@ -18,7 +18,8 @@
         "PLAYGROUND",
         "TERMINAL",
         "REPOSITORIES"
-      ]
+      ],
+      "neofetchSummary": "Interactive portfolio, particle physics and a pixel resident."
     },
     {
       "name": "openground",
@@ -30,7 +31,8 @@
         "DATA SOURCES",
         "LIVE STREAM",
         "POSTGRES"
-      ]
+      ],
+      "neofetchSummary": "Connect data sources and stream telemetry in real time."
     },
     {
       "name": "DxReportReview",
@@ -42,7 +44,8 @@
         "DRAFT",
         "LAYOUT DIFF",
         "APPROVAL"
-      ]
+      ],
+      "neofetchSummary": "Review and approve report layouts before merging."
     },
     {
       "name": "Relay",
@@ -54,7 +57,8 @@
         "WEBHOOK",
         "PERSIST",
         "DELIVER / RETRY"
-      ]
+      ],
+      "neofetchSummary": "Persist webhook events and deliver them with retries."
     }
   ]
 }

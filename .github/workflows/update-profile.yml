@@ -26,8 +26,8 @@ jobs:
         run: node scripts/sync-github.mjs
         env:
           GITHUB_TOKEN: ${{ github.token }}
-      - name: Generate contribution Breakout
-        run: node scripts/generate-arcade.mjs
+      - name: Generate contribution snake
+        run: node scripts/generate-snake.mjs
         env:
           GITHUB_TOKEN: ${{ github.token }}
       - name: Render profile and project cards
