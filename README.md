@@ -72,10 +72,10 @@ A Go service that persists webhook events and delivers them asynchronously, with
 My contribution calendar, played back as Breakout. [Play the real paddle game on my site ↗](https://jedkx.github.io/J-Portfolio/)
 
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/breakout-static-dark.svg?v=cbe0321bc58a">
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/breakout-static-light.svg?v=2316ca3c67cc">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/breakout-dark.svg?v=889da13d0f94">
-  <img src="assets/breakout-light.svg?v=647c9426ce83" alt="Animated Breakout replay generated from my GitHub contribution calendar." width="900">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/breakout-static-dark.svg?v=eccaaa8c6a90">
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/breakout-static-light.svg?v=9e152071aca3">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/breakout-dark.svg?v=b2a0de6e6993">
+  <img src="assets/breakout-light.svg?v=9a6c9c9f5dee" alt="Animated Breakout replay generated from my GitHub contribution calendar." width="900">
 </picture>
 
 <details>
