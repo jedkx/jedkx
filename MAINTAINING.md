@@ -38,14 +38,15 @@ on demand; no upstream bundle is redistributed. GITHUB_TOKEN reads the real
 contribution calendar. Both themes use the profile accent. Static alternatives
 are selected when the visitor prefers reduced motion.
 
-snake-route.mjs replaces the upstream solver route with a one-way sweep through
-adjacent calendar cells. Each cell is visited exactly once. The growing body
-follows that same history; it cannot cross itself or leave the grid. At the end,
-the snake fades out before resetting; it never visibly jumps back across cells.
+snake-route.mjs plans shortest paths toward uneaten contribution cells while
+reserving a ten-segment moving body. Cells behind the tail may be revisited.
+Candidate turns must leave maneuvering room, or contain all remaining food
+when entering the final corridor. Every food cell is consumed once. At the end,
+the snake fades before resetting. It never visibly jumps back across cells.
 Cell disappearance, bite highlights and outlines use the new arrival times.
 The style adapter retains the blinking eyes, bounded growth and terminal frame.
-Checks inspect the emitted SVG route for adjacency, bounds, unique visits and
-complete coverage. The collection bar remains removed.
+Checks inspect the emitted SVG route for adjacency, bounds, moving-body collisions and
+complete food coverage. The collection bar remains removed.
 
 ## Visual checks
 

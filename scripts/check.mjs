@@ -24,8 +24,12 @@ for(const name of names){
     assert.doesNotMatch(svg,/<rect class="u /,'Collection bar must remain removed');
     const route=svg.match(/@keyframes s0\{(.*?)\}\.s\.s0/s)?.[1]+'}';
     const positions=[...route.matchAll(/([\d.]+)%\{transform:translate\(([\d.]+)px,([\d.]+)px\)\}/g)].filter(m=>+m[1]<=90).map(m=>({x:+m[2],y:+m[3]}));
-    assert.equal(positions.length,cells.length,'Snake must visit every contribution cell');
-    assert.equal(new Set(positions.map(p=>`${p.x},${p.y}`)).size,positions.length,'Snake must never cross its earlier path during a sweep');
+    const visited=new Set(positions.map(p=>`${p.x},${p.y}`));
+    for(const cell of cells.filter(c=>c[0].includes('class="c c')))assert.ok(visited.has(`${+cell[1]-2},${+cell[2]-2}`),'Snake must eat every active contribution');
+    for(let i=0;i<positions.length;i++){
+      const body=positions.slice(Math.max(0,i-9),i+1);
+      assert.equal(new Set(body.map(p=>`${p.x},${p.y}`)).size,body.length,'Snake must not intersect its moving body');
+    }
     for(let i=1;i<positions.length;i++)assert.equal(Math.abs(positions[i].x-positions[i-1].x)+Math.abs(positions[i].y-positions[i-1].y),16,'Snake must move between adjacent cells');
     assert.match(svg,/<g class="snake-loop">/,'Reset must happen inside the fading snake layer');
   }
