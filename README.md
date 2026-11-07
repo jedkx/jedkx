@@ -28,10 +28,10 @@ I build software across the stack, with a soft spot for games, playful interface
 ### Contribution trail
 
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-static-dark.svg?v=2d7ca55afe72">
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-static-light.svg?v=d1d2669343a9">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-dark.svg?v=43a6f0490c53">
-  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-light.svg?v=bcd989ec0582" alt="My GitHub contribution calendar, eaten by a snake. Generated with Platane/snk." width="900">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-static-dark.svg?v=6a2719b7c831">
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-static-light.svg?v=05c85a8266ff">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-dark.svg?v=3365eb5dc085">
+  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-light.svg?v=e862c6963376" alt="My GitHub contribution calendar, eaten by a snake. Generated with Platane/snk." width="900">
 </picture>
 
 ### Recent work
