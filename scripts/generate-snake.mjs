@@ -2,6 +2,7 @@ import {readFile,writeFile,mkdir,rename} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
+import {styleSnake} from './style-snake.mjs';
 const root=new URL('../',import.meta.url);
 const profile=JSON.parse(await readFile(new URL('data/profile.json',root),'utf8'));
 const upstream=JSON.parse(await readFile(new URL('vendor/snake-source.json',root),'utf8'));
@@ -31,7 +32,7 @@ execFileSync(process.execPath,[fileURLToPath(new URL('index.js',cache))],{
 });
 const files=[];
 for(const theme of ['dark','light']){
-  const svg=await readFile(new URL(theme+'.svg',output),'utf8');
+  const svg=styleSnake(await readFile(new URL(theme+'.svg',output),'utf8'));
   if(!svg.includes('<svg')||/<script\b/i.test(svg))throw Error('Invalid snake SVG output');
   const still=svg.replace('</svg>','<style>*{animation:none!important;transition:none!important}</style></svg>');
   for(const [suffix,content] of [[theme,svg],['static-'+theme,still]]){

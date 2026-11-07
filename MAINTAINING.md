@@ -36,7 +36,9 @@ The official Platane/snk SVG-only action bundle is pinned by revision and four
 SHA-256 checksums in vendor/snake-source.json. It downloads to ignored .cache
 on demand; no upstream bundle is redistributed. GITHUB_TOKEN reads the real
 contribution calendar. Both themes use the profile accent. Static alternatives
-are selected when the visitor prefers reduced motion.
+are selected when the visitor prefers reduced motion. The local style-snake adapter removes
+the accumulation bar, adds six tail segments as meals are collected, and briefly
+highlights the head on a bite. The original route and contribution data stay intact.
 
 ## Visual checks
 
@@ -50,6 +52,7 @@ GitHub raw redirects discard arbitrary query strings, so relative raw links
 cannot reliably invalidate cached artwork after a design update.
 
 Selected work is one neofetch terminal with all four projects, a CC ASCII mark
-and their stacks. A mobile variant keeps the project list readable. Ordinary
-links below the image open each repository; SVG image internals are not clickable.
+and their stacks. A mobile variant keeps the project list readable. Six aligned
+SVG strips form one terminal: header, four linked project rows, and footer. Each
+row is wrapped in an ordinary HTML link because SVG image internals cannot open links.
 Recent work remains a terminal timeline of actual repository push dates.
