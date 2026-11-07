@@ -1,0 +1,60 @@
+{
+  "username": "jedkx",
+  "name": "Caner Coşkun",
+  "role": "Full-stack developer",
+  "location": "Ankara, Türkiye",
+  "accent": "#ff5555",
+  "portfolio": "https://jedkx.github.io/J-Portfolio/",
+  "email": "ccoskun742@gmail.com",
+  "cv": "https://drive.google.com/file/d/1AgQYEGXntEEDf31rzrcfPjonrO44K5Ao/view",
+  "projects": [
+    {
+      "name": "J-Portfolio",
+      "title": "J-Portfolio",
+      "category": "INTERFACE / INTERACTION",
+      "summary": "A terminal-inspired portfolio with particle physics, an original pixel character and a GitHub-powered project feed.",
+      "stack": "React · TypeScript · GSAP",
+      "diagram": [
+        "PLAYGROUND",
+        "TERMINAL",
+        "REPOSITORIES"
+      ]
+    },
+    {
+      "name": "openground",
+      "title": "openground",
+      "category": "REAL-TIME / TELEMETRY",
+      "summary": "A telemetry platform that connects data sources, streams live measurements and stores them in Postgres.",
+      "stack": "Python · WebSocket · Postgres",
+      "diagram": [
+        "DATA SOURCES",
+        "LIVE STREAM",
+        "POSTGRES"
+      ]
+    },
+    {
+      "name": "DxReportReview",
+      "title": "DxReportReview",
+      "category": "WORKFLOW / REPORTING",
+      "summary": "Git-style review for DevExpress report layouts: submit, compare, then approve or reject before merge.",
+      "stack": "C# · ASP.NET Core · DevExpress",
+      "diagram": [
+        "DRAFT",
+        "LAYOUT DIFF",
+        "APPROVAL"
+      ]
+    },
+    {
+      "name": "Relay",
+      "title": "Relay",
+      "category": "BACKEND / DELIVERY",
+      "summary": "A Go service that persists webhook events and delivers them asynchronously, with retries and attempt logs.",
+      "stack": "Go · Postgres · Webhooks",
+      "diagram": [
+        "WEBHOOK",
+        "PERSIST",
+        "DELIVER / RETRY"
+      ]
+    }
+  ]
+}

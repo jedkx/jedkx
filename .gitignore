@@ -1,0 +1,5 @@
+.cache/
+node_modules/
+preview/
+*.log
+.env*

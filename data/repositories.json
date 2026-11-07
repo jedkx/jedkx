@@ -1,0 +1,82 @@
+[
+  {
+    "name": "J-Portfolio",
+    "description": "Engineering-focused portfolio platform with a Docker-first development workflow and a hybrid project feed: curated static case studies are combined with automatically synced public GitHub repositories, including intelligent screenshot resolution from repository README/preview assets.",
+    "language": "TypeScript",
+    "html_url": "https://github.com/jedkx/J-Portfolio",
+    "pushed_at": "2026-11-07T20:00:07Z",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false
+  },
+  {
+    "name": "JedkxClicker",
+    "description": "A lightweight, portable Windows auto clicker",
+    "language": "C++",
+    "html_url": "https://github.com/jedkx/JedkxClicker",
+    "pushed_at": "2026-11-05T09:19:31Z",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false
+  },
+  {
+    "name": "jedkxWTTG3",
+    "description": "A fast Welcome to the Game III assistant for checking website uptime, Otrex clickpoints, VirtMesh PCs, wiki runs, keys, and fetch files.",
+    "language": "JavaScript",
+    "html_url": "https://github.com/jedkx/jedkxWTTG3",
+    "pushed_at": "2026-09-14T08:41:56Z",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false
+  },
+  {
+    "name": "Relay",
+    "description": "Go service that persists webhook events to Postgres and delivers them asynchronously with retries and attempt logging.",
+    "language": "Go",
+    "html_url": "https://github.com/jedkx/Relay",
+    "pushed_at": "2026-05-16T20:47:16Z",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false
+  },
+  {
+    "name": "openground",
+    "description": "Generic telemetry platform — connect any data source, stream in real time, store in Postgres. Multi-mission, zero hardcoded fields.",
+    "language": "Python",
+    "html_url": "https://github.com/jedkx/openground",
+    "pushed_at": "2026-05-13T06:30:43Z",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false
+  },
+  {
+    "name": "sentinel",
+    "description": "System monitor for Raspberry Pi on Waveshare 2.13\" e‑paper — metrics, scrolling log, systemd.",
+    "language": "C++",
+    "html_url": "https://github.com/jedkx/sentinel",
+    "pushed_at": "2026-04-21T09:11:41Z",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false
+  },
+  {
+    "name": "DxReportReview",
+    "description": "ASP.NET Core demo: DevExpress Reporting with a git-style layout review — designers submit, approvers diff and approve/reject before merge.",
+    "language": "C#",
+    "html_url": "https://github.com/jedkx/DxReportReview",
+    "pushed_at": "2026-04-13T21:12:21Z",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false
+  },
+  {
+    "name": "Jedkx-NewsPaper-Portfolio",
+    "description": "Vintage newspaper-themed portfolio showcasing modern software engineering skills - Built with React 19 & Vite",
+    "language": "CSS",
+    "html_url": "https://github.com/jedkx/Jedkx-NewsPaper-Portfolio",
+    "pushed_at": "2025-09-03T20:24:07Z",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false
+  }
+]
