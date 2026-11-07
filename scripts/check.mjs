@@ -8,7 +8,7 @@ for(const match of readme.matchAll(/(?:src|srcset)="([^" ]+)"/g)){
   await access(new URL(local.split('?')[0],root));
 }
 const names=(await readdir(new URL('assets/',root))).filter(n=>n.endsWith('.svg'));
-assert.equal(names.length,18,'Expected two themes, mobile headers, four project cards, Breakout and static alternatives');
+assert.equal(names.length,28,'Expected light/dark assets, mobile headers/project cards/activity, and Breakout alternatives');
 for(const name of names){
   const svg=await readFile(new URL('assets/'+name,root),'utf8');
   assert.match(svg,/<svg\b/); assert.match(svg,/viewBox=/);

@@ -16,74 +16,49 @@ I build software across the stack, with a soft spot for games, playful interface
 
 ### Selected work
 
-<table>
-<tr>
-<td width="50%" valign="top">
+<p align="center">
 <a href="https://github.com/jedkx/J-Portfolio"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-j-portfolio-dark.svg?v=f26968e3ed49">
-  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-j-portfolio-light.svg?v=196b98620e89" alt="J-Portfolio system diagram" width="450">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-j-portfolio-mobile-dark.svg?v=f07819258967">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-j-portfolio-mobile-light.svg?v=ee70924de5ab">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-j-portfolio-dark.svg?v=baba352e7b43">
+  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-j-portfolio-light.svg?v=a2107bfa5a8b" alt="J-Portfolio: A terminal-inspired portfolio with particle physics, an original pixel character and a GitHub-powered project feed." width="385">
 </picture></a>
-
-**[J-Portfolio](https://github.com/jedkx/J-Portfolio)**
-
-A terminal-inspired portfolio with particle physics, an original pixel character and a GitHub-powered project feed.
-
-</td>
-<td width="50%" valign="top">
 <a href="https://github.com/jedkx/openground"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-openground-dark.svg?v=cdacb5ccfb2d">
-  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-openground-light.svg?v=339aa9e664c9" alt="openground system diagram" width="450">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-openground-mobile-dark.svg?v=fb91763bf78f">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-openground-mobile-light.svg?v=dc8c2e958d41">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-openground-dark.svg?v=1f0681135d11">
+  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-openground-light.svg?v=31b10e06d5d2" alt="openground: A telemetry platform that connects data sources, streams live measurements and stores them in Postgres." width="385">
 </picture></a>
-
-**[openground](https://github.com/jedkx/openground)**
-
-A telemetry platform that connects data sources, streams live measurements and stores them in Postgres.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
 <a href="https://github.com/jedkx/DxReportReview"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-dxreportreview-dark.svg?v=ecb3a99e2c40">
-  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-dxreportreview-light.svg?v=fa18ca5deac4" alt="DxReportReview system diagram" width="450">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-dxreportreview-mobile-dark.svg?v=dac4f186eff9">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-dxreportreview-mobile-light.svg?v=d35e6b25375a">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-dxreportreview-dark.svg?v=81abe0d2d4d7">
+  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-dxreportreview-light.svg?v=9c4fdf46efea" alt="DxReportReview: Git-style review for DevExpress report layouts: submit, compare, then approve or reject before merge." width="385">
 </picture></a>
-
-**[DxReportReview](https://github.com/jedkx/DxReportReview)**
-
-Git-style review for DevExpress report layouts: submit, compare, then approve or reject before merge.
-
-</td>
-<td width="50%" valign="top">
 <a href="https://github.com/jedkx/Relay"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-relay-dark.svg?v=f08a60a6eda8">
-  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-relay-light.svg?v=804b98b3d5ab" alt="Relay system diagram" width="450">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-relay-mobile-dark.svg?v=3546ed1890e8">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-relay-mobile-light.svg?v=3e423411b426">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-relay-dark.svg?v=25d5ad87649a">
+  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/project-relay-light.svg?v=a989e6fc69a6" alt="Relay: A Go service that persists webhook events and delivers them asynchronously, with retries and attempt logs." width="385">
 </picture></a>
-
-**[Relay](https://github.com/jedkx/Relay)**
-
-A Go service that persists webhook events and delivers them asynchronously, with retries and attempt logs.
-
-</td>
-</tr>
-</table>
+</p>
 
 ### A year, in bricks
 
 My contribution calendar, played back as Breakout. [Play the real paddle game on my site ↗](https://jedkx.github.io/J-Portfolio/)
 
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-static-dark.svg?v=481bd7067735">
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-static-light.svg?v=6f6232127cfd">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-dark.svg?v=89e96a08ae28">
-  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-light.svg?v=2b6730215d89" alt="Animated Breakout replay generated from my GitHub contribution calendar." width="900">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-static-dark.svg?v=2aec794edfe4">
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-static-light.svg?v=c3a0b91e709d">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-dark.svg?v=b1946188e186">
+  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/breakout-light.svg?v=f29d50d7f8a1" alt="Animated Breakout replay generated from my GitHub contribution calendar." width="900">
 </picture>
 
-<details>
-<summary>What I’ve been working on</summary>
+### Recent work
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/activity-dark.svg?v=bf4d3968e3b9">
-  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/activity-light.svg?v=217e0241636a" alt="Recent repository push dates. Generated automatically from public GitHub data." width="900">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/activity-mobile-dark.svg?v=88b35133c9a1">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/activity-mobile-light.svg?v=1bf6317950b2">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/activity-dark.svg?v=3f43d263b651">
+  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/activity-light.svg?v=a424c9303549" alt="Most recently pushed public repositories and their actual push dates." width="900">
 </picture>
-
-</details>

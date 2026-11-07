@@ -47,3 +47,8 @@ approximates GitHub's layout and does not replace its sanitizer/theme rendering.
 Image URLs point directly to raw.githubusercontent.com and carry content hashes.
 GitHub raw redirects discard arbitrary query strings, so relative raw links
 cannot reliably invalidate cached artwork after a design update.
+
+Selected work uses self-contained terminal cards with inline wrapping, so cards
+wrap to a single column on narrow screens. Project descriptions stay inside each
+terminal; mobile SVG variants increase text size. Recent work is a visible
+terminal timeline of repository push dates, not a commit-frequency statistic.

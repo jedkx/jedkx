@@ -91,21 +91,34 @@ function header(theme,mobile=false) {
   }
   return svg(w,h,body+snack(mobile),'Caner Coşkun. Full-stack developer in Ankara. Software, games and embedded systems.');
 }
-function cover(project,index,theme){
-  const p=palettes[theme];
-  const nodes=project.diagram.map((label,i)=>{
-    const x=24+i*145;
-    return `<rect x="${x}" y="139" width="132" height="34" rx="3" fill="${p.panel}" stroke="${i===1?profile.accent:p.rule}"/>${text(x+66,160,label,9,i===1?profile.accent:p.fg,'text-anchor="middle"')}${i<2?`<path d="M${x+132} 156h13m-4-3 4 3-4 3" fill="none" stroke="${p.muted}"/>`:''}`;
-  }).join('');
-  const styles=`<style>.caret{animation:blink 1.4s steps(1) ${index*.17}s infinite}@keyframes blink{50%{opacity:0}}@media(prefers-reduced-motion:reduce){.caret{animation:none}}</style>`;
-  const chrome=`<path d="M8 .5H462Q469.5 .5 469.5 8V32H.5V8Q.5 .5 8 .5Z" fill="${p.panel}"/><path d="M1 32H469" stroke="${p.rule}"/>${[profile.accent,p.rule,p.muted].map((color,i)=>`<circle cx="${16+i*12}" cy="16" r="3" fill="${color}"/>`).join('')}${text(76,20,`~/work/${project.name}`,10,p.muted)}${text(449,20,'zsh',9,p.muted,'text-anchor="end"')}`;
-  const body=`${text(24,61,'$ cat project.info',11,profile.accent)}${text(24,98,project.title,25,p.fg,'font-weight="700" letter-spacing="-.8"')}${text(24,119,project.category,9,p.muted)}${nodes}<path d="M24 190H446" stroke="${p.rule}"/>${text(24,210,project.stack,10,p.muted)}${text(24,235,'$ open repository',10,profile.accent)}<rect class="caret" x="134" y="226" width="6" height="10" fill="${profile.accent}"/>${text(446,235,`0${index+1} ↗`,10,p.muted,'text-anchor="end"')}`;
-  return svg(470,252,`${styles}<rect x=".5" y=".5" width="469" height="251" rx="8" fill="${p.bg}" stroke="${p.rule}"/>${chrome}${body}`,`${project.title} terminal project card: ${project.summary}`);
+function wrap(value,limit){
+  const lines=[]; let line='';
+  for(const word of value.split(/\s+/)){if(line && (line+' '+word).length>limit){lines.push(line);line=word;}else line=line?line+' '+word:word;}
+  if(line)lines.push(line);return lines;
 }
-function activity(theme){
-  const p=palettes[theme];
+function terminalFrame(w,h,p,path){
+  return `<rect x=".5" y=".5" width="${w-1}" height="${h-1}" rx="9" fill="${p.bg}" stroke="${p.rule}"/><path d="M9 .5H${w-9}Q${w-.5} .5 ${w-.5} 9V34H.5V9Q.5 .5 9 .5Z" fill="${p.panel}"/><path d="M1 34H${w-1}" stroke="${p.rule}"/>${[profile.accent,p.rule,p.muted].map((c,i)=>`<circle cx="${17+i*12}" cy="17" r="3" fill="${c}"/>`).join('')}${text(76,21,path,11,p.muted)}${text(w-22,21,'zsh',10,p.muted,'text-anchor="end"')}`;
+}
+function cover(project,index,theme,mobile=false){
+  const p=palettes[theme],w=mobile?440:470,h=mobile?406:330;
+  const lines=wrap(project.summary,mobile?29:40),font=mobile?22:17,lh=mobile?29:25;
+  if(lines.length>(mobile?6:4))throw Error(`Project summary is too long: ${project.name}`);
+  const styles=`<style>.caret{animation:blink 1.4s steps(1) ${index*.17}s infinite}@keyframes blink{50%{opacity:0}}@media(prefers-reduced-motion:reduce){.caret{animation:none}}</style>`;
+  const divider=mobile?316:247;
+  const body=`${text(24,68,'$ cat project.info',mobile?16:13,profile.accent)}${text(24,111,project.title,mobile?30:28,p.fg,'font-weight="700" letter-spacing="-.8"')}${lines.map((line,i)=>text(24,151+i*lh,line,font,p.muted)).join('')}<path d="M24 ${divider}H${w-24}" stroke="${p.rule}"/>${text(24,divider+28,project.stack,mobile?16:13,p.fg)}${text(24,h-24,'$ open repository',mobile?16:13,profile.accent)}<rect class="caret" x="${mobile?199:166}" y="${h-36}" width="7" height="14" fill="${profile.accent}"/>${text(w-24,h-24,'↗',17,p.muted,'text-anchor="end"')}`;
+  return svg(w+16,h+16,`<g transform="translate(8 8)">${styles+terminalFrame(w,h,p,'~/work/'+project.name)+body}</g>`,project.title+': '+project.summary);
+}
+function activity(theme,mobile=false){
+  const p=palettes[theme],w=mobile?440:900,h=mobile?490:326;
   const selected=repos.filter(r=>!r.fork&&!r.archived&&r.name!==profile.username&&r.pushed_at).sort((a,b)=>b.pushed_at.localeCompare(a.pushed_at)).slice(0,3);
-  return svg(900,150,`<rect x=".5" y=".5" width="899" height="149" rx="8" fill="${p.bg}" stroke="${p.rule}"/>${text(24,29,'RECENT REPOSITORY UPDATES',11,p.muted)}${selected.map((r,i)=>`${text(24,61+i*32,'›',14,profile.accent)}${text(47,61+i*32,r.name,13,p.fg)}${text(650,61+i*32,r.language||'—',11,p.muted)}${text(875,61+i*32,r.pushed_at.slice(0,10),11,p.muted,'text-anchor="end"')}`).join('')}`,'Recent public repository push dates. Not a live activity feed.');
+  const top=mobile?126:112,step=mobile?112:68;
+  const rows=selected.map((r,i)=>{
+    const y=top+i*step;
+    const area=profile.projects.find(project=>project.name===r.name)?.category||r.language||'PUBLIC REPOSITORY';
+    return `<circle cx="32" cy="${y-6}" r="${i?4:6}" fill="${i?p.bg:profile.accent}" stroke="${profile.accent}" stroke-width="2"/>${text(56,y,r.name,mobile?21:18,p.fg,'font-weight="600"')}${text(mobile?56:w-28,mobile?y+28:y,r.pushed_at.slice(0,10),mobile?15:13,profile.accent,mobile?'':'text-anchor="end"')}${text(56,y+(mobile?54:25),area,mobile?13:11,p.muted)}`;
+  }).join('');
+  const body=`${text(24,69,'$ ls -lt ~/work',mobile?17:14,profile.accent)}<path d="M32 ${top-6}V${top+(selected.length-1)*step-6}" stroke="${profile.accent}" stroke-opacity=".35" stroke-width="2"/>${rows}<path d="M24 ${h-47}H${w-24}" stroke="${p.rule}"/>${text(24,h-22,'LAST PUSH / PUBLIC REPOSITORIES',mobile?12:11,p.muted)}`;
+  return svg(w,h,terminalFrame(w,h,p,'~/activity')+body,'Most recently pushed public repositories, with actual push dates. This is repository metadata, not a commit log.');
 }
 const versions=new Map();
 const asset=name=>`https://raw.githubusercontent.com/${profile.username}/${profile.username}/main/assets/${name}?v=${versions.get(name)}`;
@@ -117,12 +130,16 @@ for(const theme of Object.keys(palettes)){
   await writeFile(new URL(`assets/header-${theme}.svg`,root),header(theme));
   await writeFile(new URL(`assets/header-mobile-${theme}.svg`,root),header(theme,true));
   await writeFile(new URL(`assets/activity-${theme}.svg`,root),activity(theme));
-  for(const [i,p] of profile.projects.entries())await writeFile(new URL(`assets/project-${p.name.toLowerCase()}-${theme}.svg`,root),cover(p,i,theme));
+  await writeFile(new URL(`assets/activity-mobile-${theme}.svg`,root),activity(theme,true));
+  for(const [i,p] of profile.projects.entries()){
+    await writeFile(new URL(`assets/project-${p.name.toLowerCase()}-${theme}.svg`,root),cover(p,i,theme));
+    await writeFile(new URL(`assets/project-${p.name.toLowerCase()}-mobile-${theme}.svg`,root),cover(p,i,theme,true));
+  }
 }
 for(const name of (await readdir(new URL('assets/',root))).filter(n=>n.endsWith('.svg'))){
   versions.set(name,createHash('sha256').update(await readFile(new URL('assets/'+name,root))).digest('hex').slice(0,12));
 }
-const projectRows=[0,2].map(start=>`<tr>\n${profile.projects.slice(start,start+2).map(p=>`<td width="50%" valign="top">\n<a href="https://github.com/${profile.username}/${p.name}">${picture('project-'+p.name.toLowerCase(),p.title+' system diagram',450)}</a>\n\n**[${p.title}](https://github.com/${profile.username}/${p.name})**\n\n${p.summary}\n\n</td>`).join('\n')}\n</tr>`).join('\n');
+const projectCards=profile.projects.map(p=>`<a href="https://github.com/${profile.username}/${p.name}">${picture('project-'+p.name.toLowerCase(),p.title+': '+p.summary,385,true)}</a>`).join('\n');
 const readme=`<!-- Generated by scripts/render-assets.mjs. Edit data/profile.json, not this file. -->
 <a href="${profile.portfolio}">
 ${picture('header','Caner Coşkun — full-stack developer. Animated terminal with the original pixel resident.',900,true)}
@@ -136,9 +153,9 @@ I build software across the stack, with a soft spot for games, playful interface
 
 ### Selected work
 
-<table>
-${projectRows}
-</table>
+<p align="center">
+${projectCards}
+</p>
 
 ### A year, in bricks
 
@@ -146,12 +163,9 @@ My contribution calendar, played back as Breakout. [Play the real paddle game on
 
 ${picture('breakout','Animated Breakout replay generated from my GitHub contribution calendar.',900)}
 
-<details>
-<summary>What I’ve been working on</summary>
+### Recent work
 
-${picture('activity','Recent repository push dates. Generated automatically from public GitHub data.')}
-
-</details>
+${picture('activity','Most recently pushed public repositories and their actual push dates.',900,true)}
 `;
 await writeFile(new URL('README.md',root),readme);
 console.log(`Rendered profile, 4 project diagrams, theme/mobile variants; resident uses ${new Set(sequence.map(s=>s.frame)).size} approved poses.`);
