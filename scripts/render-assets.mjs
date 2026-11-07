@@ -93,10 +93,13 @@ function header(theme,mobile=false) {
 function cover(project,index,theme){
   const p=palettes[theme];
   const nodes=project.diagram.map((label,i)=>{
-    const x=30+i*143;
-    return `<rect x="${x}" y="93" width="125" height="50" rx="5" fill="${p.panel}" stroke="${i===1?profile.accent:p.rule}"/>${text(x+62.5,122,label,9,i===1?profile.accent:p.fg,'text-anchor="middle"')}${i<2?`<path d="M${x+125} 118h18m-5-4 5 4-5 4" fill="none" stroke="${p.muted}"/>`:''}`;
+    const x=24+i*145;
+    return `<rect x="${x}" y="139" width="132" height="34" rx="3" fill="${p.panel}" stroke="${i===1?profile.accent:p.rule}"/>${text(x+66,160,label,9,i===1?profile.accent:p.fg,'text-anchor="middle"')}${i<2?`<path d="M${x+132} 156h13m-4-3 4 3-4 3" fill="none" stroke="${p.muted}"/>`:''}`;
   }).join('');
-  return svg(470,192,`<rect x=".5" y=".5" width="469" height="191" rx="8" fill="${p.bg}" stroke="${p.rule}"/>${text(26,29,`0${index+1} / ${project.category}`,9,p.muted)}${text(26,64,project.title,24,p.fg,'font-family="Arial,Helvetica,sans-serif" font-weight="700"')}${nodes}${text(26,174,project.stack,10,p.muted)}${text(443,63,'↗',19,profile.accent,'text-anchor="end"')}`,`${project.title}: ${project.summary}`);
+  const styles=`<style>.caret{animation:blink 1.4s steps(1) ${index*.17}s infinite}@keyframes blink{50%{opacity:0}}@media(prefers-reduced-motion:reduce){.caret{animation:none}}</style>`;
+  const chrome=`<path d="M8 .5H462Q469.5 .5 469.5 8V32H.5V8Q.5 .5 8 .5Z" fill="${p.panel}"/><path d="M1 32H469" stroke="${p.rule}"/>${[profile.accent,p.rule,p.muted].map((color,i)=>`<circle cx="${16+i*12}" cy="16" r="3" fill="${color}"/>`).join('')}${text(76,20,`~/work/${project.name}`,10,p.muted)}${text(449,20,'zsh',9,p.muted,'text-anchor="end"')}`;
+  const body=`${text(24,61,'$ cat project.info',11,profile.accent)}${text(24,98,project.title,25,p.fg,'font-weight="700" letter-spacing="-.8"')}${text(24,119,project.category,9,p.muted)}${nodes}<path d="M24 190H446" stroke="${p.rule}"/>${text(24,210,project.stack,10,p.muted)}${text(24,235,'$ open repository',10,profile.accent)}<rect class="caret" x="134" y="226" width="6" height="10" fill="${profile.accent}"/>${text(446,235,`0${index+1} ↗`,10,p.muted,'text-anchor="end"')}`;
+  return svg(470,252,`${styles}<rect x=".5" y=".5" width="469" height="251" rx="8" fill="${p.bg}" stroke="${p.rule}"/>${chrome}${body}`,`${project.title} terminal project card: ${project.summary}`);
 }
 function activity(theme){
   const p=palettes[theme];
