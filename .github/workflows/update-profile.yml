@@ -1,7 +1,7 @@
 name: Refresh profile assets
 on:
   schedule:
-    - cron: '17 5 * * *'
+    - cron: '17 * * * *' # hourly: recent pushes stay fresh (commits only when something changed)
   workflow_dispatch:
   push:
     branches: [main]

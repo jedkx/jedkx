@@ -9,6 +9,19 @@
   "cv": "https://drive.google.com/file/d/1AgQYEGXntEEDf31rzrcfPjonrO44K5Ao/view",
   "projects": [
     {
+      "name": "jedkx-cli",
+      "title": "jedkx-cli",
+      "category": "TERMINAL / TOOLING",
+      "summary": "A Go terminal app that puts every Claude Code and Codex chat in one list and resumes them in a pane beside it.",
+      "stack": "Go · Bubble Tea · Windows Terminal",
+      "diagram": [
+        "READ LOGS",
+        "LIST / SEARCH",
+        "RESUME"
+      ],
+      "neofetchSummary": "One list for every Claude Code and Codex chat."
+    },
+    {
       "name": "J-Portfolio",
       "title": "J-Portfolio",
       "category": "INTERFACE / INTERACTION",

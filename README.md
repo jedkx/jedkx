@@ -12,57 +12,65 @@
 
 <div>
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-top-mobile-dark.svg?v=06d0a00b6ae5">
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-top-mobile-light.svg?v=b0d267e70ce2">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-top-dark.svg?v=44863468bc4d">
-  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-top-light.svg?v=37f500164a65" alt="Selected work — neofetch" width="900" align="top">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-top-mobile-dark.svg?v=5f514efde3b7">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-top-mobile-light.svg?v=825bf113d7ad">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-top-dark.svg?v=1490d98c5e80">
+  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-top-light.svg?v=11af913042da" alt="Selected work — neofetch" width="900" align="top">
 </picture><br>
+<a href="https://github.com/jedkx/jedkx-cli">
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-jedkx-cli-mobile-dark.svg?v=a3d042248ab4">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-jedkx-cli-mobile-light.svg?v=fa934a9a10ae">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-jedkx-cli-dark.svg?v=fd6bc776ccb0">
+  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-jedkx-cli-light.svg?v=1aa3909c54cd" alt="jedkx-cli — One list for every Claude Code and Codex chat. Open repository." width="900" align="top">
+</picture>
+</a><br>
 <a href="https://github.com/jedkx/J-Portfolio">
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-j-portfolio-mobile-dark.svg?v=fe5486f0bfa3">
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-j-portfolio-mobile-light.svg?v=73dc996f0389">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-j-portfolio-dark.svg?v=cc93d6ed678e">
-  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-j-portfolio-light.svg?v=4ae171dbf83d" alt="J-Portfolio — Interactive portfolio, particle physics and a pixel resident. Open repository." width="900" align="top">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-j-portfolio-mobile-dark.svg?v=76ef7b4812e4">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-j-portfolio-mobile-light.svg?v=d9bddc8b9a55">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-j-portfolio-dark.svg?v=ce3f1fade04a">
+  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-j-portfolio-light.svg?v=d5e216146549" alt="J-Portfolio — Interactive portfolio, particle physics and a pixel resident. Open repository." width="900" align="top">
 </picture>
 </a><br>
 <a href="https://github.com/jedkx/openground">
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-openground-mobile-dark.svg?v=32c6fcdcf9c6">
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-openground-mobile-light.svg?v=8bfd94fc9c83">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-openground-dark.svg?v=3f4b588cc426">
-  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-openground-light.svg?v=6a973beaf3ae" alt="openground — Connect data sources and stream telemetry in real time. Open repository." width="900" align="top">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-openground-mobile-dark.svg?v=9873fbe8a400">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-openground-mobile-light.svg?v=3c5a5555bfe9">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-openground-dark.svg?v=8eadd0bfbe7a">
+  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-openground-light.svg?v=17781efe6262" alt="openground — Connect data sources and stream telemetry in real time. Open repository." width="900" align="top">
 </picture>
 </a><br>
 <a href="https://github.com/jedkx/DxReportReview">
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-dxreportreview-mobile-dark.svg?v=1b52ca05c8ef">
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-dxreportreview-mobile-light.svg?v=f66cf585a8f7">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-dxreportreview-dark.svg?v=3cf3a8350474">
-  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-dxreportreview-light.svg?v=d43e9b33dd79" alt="DxReportReview — Review and approve report layouts before merging. Open repository." width="900" align="top">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-dxreportreview-mobile-dark.svg?v=8dd5fcd65a8a">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-dxreportreview-mobile-light.svg?v=2159c3bdff61">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-dxreportreview-dark.svg?v=f356a9e5f286">
+  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-dxreportreview-light.svg?v=2c94c739542e" alt="DxReportReview — Review and approve report layouts before merging. Open repository." width="900" align="top">
 </picture>
 </a><br>
 <a href="https://github.com/jedkx/Relay">
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-relay-mobile-dark.svg?v=34ac90298e45">
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-relay-mobile-light.svg?v=ecc5ac1f7ce5">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-relay-dark.svg?v=1baee75be289">
-  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-relay-light.svg?v=fae46e254c71" alt="Relay — Persist webhook events and deliver them with retries. Open repository." width="900" align="top">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-relay-mobile-dark.svg?v=073aef3f11b6">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-relay-mobile-light.svg?v=09173aab4ff1">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-relay-dark.svg?v=9c906307382c">
+  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-relay-light.svg?v=840f201e5138" alt="Relay — Persist webhook events and deliver them with retries. Open repository." width="900" align="top">
 </picture>
 </a><br>
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-bottom-mobile-dark.svg?v=c52d668cee78">
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-bottom-mobile-light.svg?v=7b166e0e1995">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-bottom-dark.svg?v=6750c5c5b51b">
-  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-bottom-light.svg?v=21024bf52b2a" alt="Recent repository pushes: J-Portfolio on 2026-11-07; JedkxClicker on 2026-11-05; jedkxWTTG3 on 2026-09-14. End of terminal." width="900" align="top">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-bottom-mobile-dark.svg?v=208b33404e37">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-bottom-mobile-light.svg?v=08f7659062b3">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-bottom-dark.svg?v=bd32a776b3bc">
+  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/work-bottom-light.svg?v=017809dc4d1f" alt="Recent repository pushes: jedkx-cli on 2026-11-10; J-Portfolio on 2026-11-07; JedkxClicker on 2026-11-05. End of terminal." width="900" align="top">
 </picture>
 </div>
 <br>
 
 <p>
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-static-dark.svg?v=359fff20a7df">
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-static-light.svg?v=1c3ab949cbad">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-dark.svg?v=0ac4386027e0">
-  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-light.svg?v=f220b679f74b" alt="Contribution trail — my GitHub contribution calendar, eaten by a snake. Generated with Platane/snk." width="900">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-static-dark.svg?v=52210393696e">
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-static-light.svg?v=063da6ae8a00">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-dark.svg?v=05d6deb04e49">
+  <img src="https://raw.githubusercontent.com/jedkx/jedkx/main/assets/snake-light.svg?v=b96d4f61b9c5" alt="Contribution trail — my GitHub contribution calendar, eaten by a snake. Generated with Platane/snk." width="900">
 </picture>
 </p>

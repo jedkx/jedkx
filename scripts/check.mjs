@@ -8,7 +8,8 @@ for(const match of readme.matchAll(/(?:src|srcset)="([^" ]+)"/g)){
   await access(new URL(local.split('?')[0],root));
 }
 const names=(await readdir(new URL('assets/',root))).filter(n=>n.endsWith('.svg'));
-assert.equal(names.length,32,'Expected headers, six linked neofetch slices with activity, and snake alternatives');
+const projects=JSON.parse(await readFile(new URL('data/profile.json',root),'utf8')).projects.length;
+assert.equal(names.length,16+4*projects,'Expected headers, linked neofetch slices (one per project) with activity, and snake alternatives');
 for(const name of names){
   const svg=await readFile(new URL('assets/'+name,root),'utf8');
   assert.match(svg,/<svg\b/); assert.match(svg,/viewBox=/);

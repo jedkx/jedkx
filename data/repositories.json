@@ -1,10 +1,20 @@
 [
   {
+    "name": "jedkx-cli",
+    "description": null,
+    "language": null,
+    "html_url": "https://github.com/jedkx/jedkx-cli",
+    "pushed_at": "2026-11-10T17:52:57Z",
+    "stargazers_count": 0,
+    "fork": false,
+    "archived": false
+  },
+  {
     "name": "jedkx",
     "description": "Caner Coşkun — terminal profile, original pixel resident and contribution arcade.",
     "language": "JavaScript",
     "html_url": "https://github.com/jedkx/jedkx",
-    "pushed_at": "2026-11-10T14:16:14Z",
+    "pushed_at": "2026-11-10T14:16:33Z",
     "stargazers_count": 0,
     "fork": false,
     "archived": false
