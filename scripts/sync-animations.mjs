@@ -6,7 +6,7 @@ import {readFile, writeFile, mkdir, readdir, rm, stat} from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {at, VENDOR, loadCatalog, sourceFiles, sha256, renderReadme, ANIMATED} from './animations-lib.mjs';
+import {at, VENDOR, loadCatalog, sourceFiles, sha256, normalize, renderReadme, ANIMATED} from './animations-lib.mjs';
 
 const jp = process.argv[2] ?? process.env.JPORTFOLIO;
 assert.ok(jp, 'usage: node scripts/sync-animations.mjs <path-to-J-Portfolio>');
@@ -43,7 +43,7 @@ for (const f of listed) await stat(from(f)).catch(() => assert.fail(`J-Portfolio
 // 3. mirror verbatim + hash; drop vendor files no longer listed
 const files = {};
 for (const f of listed) {
-  const buf = await readFile(from(f));
+  const buf = normalize(f, await readFile(from(f)));
   await mkdir(path.dirname(fileURLToPath(at(VENDOR + f))), {recursive: true});
   await writeFile(at(VENDOR + f), buf);
   files[f] = sha256(buf);

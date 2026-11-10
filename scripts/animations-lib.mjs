@@ -9,6 +9,11 @@ export const TARGETS = ['web', 'svg', 'terminal'];
 export const LEVELS = ['native', 'portable', 'no'];
 
 export const sha256 = buf => createHash('sha256').update(buf).digest('hex');
+
+// Text is stored and hashed with LF endings so hashes match on every OS and after
+// git's autocrlf conversion; binary assets (png, aseprite) are left untouched.
+const BINARY = /\.(png|aseprite|jpe?g|gif|webp|woff2?)$/i;
+export const normalize = (file, buf) => BINARY.test(file) ? buf : Buffer.from(buf.toString('utf8').replace(/\r\n/g, '\n'));
 export const loadCatalog = async () => JSON.parse(await readFile(at('animations/catalog.json'), 'utf8'));
 export const sourceFiles = catalog => [...new Set(catalog.animations.flatMap(a => a.source))].sort();
 

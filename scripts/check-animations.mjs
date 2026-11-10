@@ -2,7 +2,7 @@
 // local files, and that animations/README.md matches the catalog.
 import assert from 'node:assert/strict';
 import {readFile, access} from 'node:fs/promises';
-import {at, VENDOR, TARGETS, LEVELS, loadCatalog, sourceFiles, sha256, renderReadme} from './animations-lib.mjs';
+import {at, VENDOR, TARGETS, LEVELS, loadCatalog, sourceFiles, sha256, normalize, renderReadme} from './animations-lib.mjs';
 
 const catalog = await loadCatalog();
 const lock = JSON.parse(await readFile(at('animations/lock.json'), 'utf8'));
@@ -21,8 +21,8 @@ for (const a of catalog.animations) {
 const listed = sourceFiles(catalog);
 assert.deepEqual(Object.keys(lock.files).sort(), listed, 'lock.json is out of date — run scripts/sync-animations.mjs');
 for (const f of listed) {
-  const buf = await readFile(at(VENDOR + f)).catch(() => assert.fail(`missing vendor/${f}`));
+  const buf = normalize(f, await readFile(at(VENDOR + f)).catch(() => assert.fail(`missing vendor/${f}`)));
   assert.equal(sha256(buf), lock.files[f], `vendor/${f} was edited — change it in J-Portfolio and re-sync`);
 }
-assert.equal(await readFile(at('animations/README.md'), 'utf8'), renderReadme(catalog, lock), 'animations/README.md is stale — re-sync');
+assert.equal((await readFile(at('animations/README.md'), 'utf8')).replace(/\r\n/g, '\n'), renderReadme(catalog, lock), 'animations/README.md is stale — re-sync');
 console.log(`animations ok: ${catalog.animations.length} entries, ${listed.length} files`);
