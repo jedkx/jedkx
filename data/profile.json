@@ -9,19 +9,6 @@
   "cv": "https://drive.google.com/file/d/1AgQYEGXntEEDf31rzrcfPjonrO44K5Ao/view",
   "projects": [
     {
-      "name": "jedkx-cli",
-      "title": "jedkx-cli",
-      "category": "TERMINAL / TOOLING",
-      "summary": "A Go terminal app that puts every Claude Code and Codex chat in one list and resumes them in a pane beside it.",
-      "stack": "Go · Bubble Tea · Windows Terminal",
-      "diagram": [
-        "READ LOGS",
-        "LIST / SEARCH",
-        "RESUME"
-      ],
-      "neofetchSummary": "One list for every Claude Code and Codex chat."
-    },
-    {
       "name": "J-Portfolio",
       "title": "J-Portfolio",
       "category": "INTERFACE / INTERACTION",
@@ -61,17 +48,17 @@
       "neofetchSummary": "Review and approve report layouts before merging."
     },
     {
-      "name": "Relay",
-      "title": "Relay",
-      "category": "BACKEND / DELIVERY",
-      "summary": "A Go service that persists webhook events and delivers them asynchronously, with retries and attempt logs.",
-      "stack": "Go · Postgres · Webhooks",
+      "name": "jedkx-cli",
+      "title": "jedkx-cli",
+      "category": "TERMINAL / TOOLING",
+      "summary": "A Go terminal app that puts every Claude Code and Codex chat in one list and resumes them in a pane beside it.",
+      "stack": "Go · Bubble Tea · Windows Terminal",
       "diagram": [
-        "WEBHOOK",
-        "PERSIST",
-        "DELIVER / RETRY"
+        "READ LOGS",
+        "LIST / SEARCH",
+        "RESUME"
       ],
-      "neofetchSummary": "Persist webhook events and deliver them with retries."
+      "neofetchSummary": "One list for every Claude Code and Codex chat."
     }
   ]
 }
