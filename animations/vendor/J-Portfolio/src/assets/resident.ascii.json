@@ -1,0 +1,4196 @@
+{
+  "version": "1.0",
+  "name": "Hidden resident — block expression sheet",
+  "width": 34,
+  "height": 12,
+  "frameRate": 12,
+  "frameCount": 14,
+  "frames": [
+    {
+      "index": 0,
+      "duration": 1400,
+      "cells": [
+        {
+          "x": 4,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 26,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 27,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 10,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 23,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 30,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 10,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 23,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 30,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 26,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 27,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 13,
+          "y": 8,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 20,
+          "y": 8,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 14,
+          "y": 9,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 15,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 16,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 17,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 18,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 19,
+          "y": 9,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "duration": 55,
+      "cells": [
+        {
+          "x": 24,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 26,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 27,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 10,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 23,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 30,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 10,
+          "y": 5,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 23,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 30,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 26,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 27,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 13,
+          "y": 8,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 20,
+          "y": 8,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 14,
+          "y": 9,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 15,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 16,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 17,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 18,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 19,
+          "y": 9,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "duration": 85,
+      "cells": [
+        {
+          "x": 3,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 10,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 23,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 26,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 27,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 30,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 13,
+          "y": 8,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 20,
+          "y": 8,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 14,
+          "y": 9,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 15,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 16,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 17,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 18,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 19,
+          "y": 9,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "duration": 65,
+      "cells": [
+        {
+          "x": 4,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 10,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 23,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 26,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 27,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 30,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 10,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 23,
+          "y": 5,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 30,
+          "y": 5,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 13,
+          "y": 8,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 20,
+          "y": 8,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 14,
+          "y": 9,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 15,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 16,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 17,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 18,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 19,
+          "y": 9,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "duration": 1100,
+      "cells": [
+        {
+          "x": 4,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 26,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 27,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 10,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 23,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 30,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 10,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 23,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 30,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 26,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 27,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 13,
+          "y": 8,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 20,
+          "y": 8,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 14,
+          "y": 9,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 15,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 16,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 17,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 18,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 19,
+          "y": 9,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "duration": 420,
+      "cells": [
+        {
+          "x": 4,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 26,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 27,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 10,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 23,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 27,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 30,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 10,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 23,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 27,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 30,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 26,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 27,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 15,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 16,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 17,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 18,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "duration": 420,
+      "cells": [
+        {
+          "x": 4,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 26,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 27,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 10,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 23,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 26,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 30,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 10,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 23,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 26,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 30,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 26,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 27,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 15,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 16,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 17,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 18,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "duration": 240,
+      "cells": [
+        {
+          "x": 4,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 26,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 27,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 10,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 23,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 30,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 10,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 23,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 30,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 26,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 27,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 15,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 16,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 17,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 18,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "duration": 450,
+      "cells": [
+        {
+          "x": 4,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 26,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 27,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 5,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 10,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 23,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 5,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 5,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 30,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 15,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 16,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 17,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 18,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "duration": 180,
+      "cells": [
+        {
+          "x": 4,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 26,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 27,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 10,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 23,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 30,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 10,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 23,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 30,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 26,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 27,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 14,
+          "y": 8,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 15,
+          "y": 8,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 16,
+          "y": 8,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 17,
+          "y": 8,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 18,
+          "y": 8,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 19,
+          "y": 8,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 13,
+          "y": 9,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 14,
+          "y": 9,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 15,
+          "y": 9,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 16,
+          "y": 9,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 17,
+          "y": 9,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 18,
+          "y": 9,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 19,
+          "y": 9,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 20,
+          "y": 9,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 14,
+          "y": 10,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 15,
+          "y": 10,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 16,
+          "y": 10,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 17,
+          "y": 10,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 18,
+          "y": 10,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 19,
+          "y": 10,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "duration": 115,
+      "cells": [
+        {
+          "x": 4,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 26,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 27,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 5,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 10,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 23,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 5,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 5,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 30,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 14,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 15,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 16,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 17,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 18,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 19,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "duration": 200,
+      "cells": [
+        {
+          "x": 3,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 10,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 23,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 26,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 27,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 30,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 15,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 16,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 17,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 18,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "duration": 650,
+      "cells": [
+        {
+          "x": 4,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 26,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 27,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 4,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 5,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 10,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 23,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 5,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 5,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 30,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 13,
+          "y": 8,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 20,
+          "y": 8,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 14,
+          "y": 9,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 15,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 16,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 17,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 18,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 19,
+          "y": 9,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "duration": 130,
+      "cells": [
+        {
+          "x": 4,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 10,
+          "y": 4,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 10,
+          "y": 5,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 23,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 24,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 25,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 26,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 27,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 28,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 29,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 30,
+          "y": 5,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 4,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 5,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 7,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 8,
+          "y": 6,
+          "char": "█",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 9,
+          "y": 6,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 13,
+          "y": 8,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 20,
+          "y": 8,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 14,
+          "y": 9,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 15,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 16,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 17,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 18,
+          "y": 9,
+          "char": "▄",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        },
+        {
+          "x": 19,
+          "y": 9,
+          "char": "▀",
+          "color": "#e8e8eb",
+          "bgColor": "transparent"
+        }
+      ]
+    }
+  ]
+}

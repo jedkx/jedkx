@@ -30,6 +30,24 @@ pixel runs into paths; it does not embed externally loaded images. Chewing uses
 neutral eyes, matching the website fix. Edit the original Aseprite source in
 J-Portfolio, export there, then copy the approved atlas and metadata here.
 
+## Animation library
+
+`animations/` holds every jedkx animation — used in this profile or not — so other
+apps (J-Portfolio, jedkx-cli, …) pick from one catalogue. `catalog.json` is the
+registry (id, technique, files, keyframes, where it can run, where it is used);
+`animations/README.md` is generated from it. Code is mirrored verbatim from
+J-Portfolio into `animations/vendor/J-Portfolio` with hashes in `lock.json`.
+
+```sh
+node scripts/sync-animations.mjs ../J-Portfolio   # copy + hash + completeness + README
+node scripts/check-animations.mjs                 # offline verification
+```
+
+The sync fails when J-Portfolio has a `@keyframes` or an animated module
+(RAF / GSAP / Motion / canvas) that is not catalogued. Never edit `vendor/`;
+change the animation in J-Portfolio and re-sync. The profile build and
+`check.mjs` do not depend on this folder.
+
 ## Contribution snake
 
 The official Platane/snk SVG-only action bundle is pinned by revision and four

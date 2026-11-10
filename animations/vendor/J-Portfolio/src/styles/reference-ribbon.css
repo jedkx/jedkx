@@ -1,0 +1,165 @@
+.reference-ribbon {
+  --reference-gap: 64px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-block: 24px;
+  border-block: 1px solid #ffffff20;
+  background: #090909;
+}
+.reference-ribbon .reference-track {
+  display: flex;
+  width: max-content;
+  animation: reference-loop 55s linear infinite;
+  will-change: transform;
+}
+.reference-ribbon .reference-group {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  min-width: 100vw;
+  justify-content: space-around;
+  gap: var(--reference-gap);
+  padding-right: var(--reference-gap);
+}
+.reference-ribbon .reference-item {
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  grid-template-columns: 34px auto;
+  align-items: center;
+  column-gap: 15px;
+  row-gap: 5px;
+  padding: 8px 0;
+  min-height: 64px;
+  white-space: nowrap;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.025em;
+  transition: filter 0.3s;
+}
+.reference-ribbon a.reference-item:hover {
+  filter: brightness(1.25);
+}
+.reference-ribbon a.reference-item:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 6px;
+}
+.reference-ribbon .reference-mark {
+  width: 32px;
+  height: 32px;
+  stroke: currentColor;
+  stroke-width: 1.1;
+  grid-row: 1 / 3;
+}
+.reference-ribbon .reference-caption {
+  font: 8px var(--font-tech);
+  color: #777;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.reference-ribbon [data-reference='hacker'] {
+  font-size: 23px;
+  letter-spacing: 0.065em;
+}
+.reference-ribbon [data-reference='hacker'] .reference-quote::after {
+  content: '_';
+  color: currentColor;
+}
+.reference-ribbon [data-reference='hacker'].is-arriving .reference-quote {
+  animation: friend-arrival 1s ease-out both;
+}
+.reference-ribbon [data-reference='middleearth'] {
+  font-size: 25px;
+  letter-spacing: 0.05em;
+}
+.reference-ribbon [data-reference='middleearth'] .reference-mark {
+  transform: rotate(-12deg);
+}
+.reference-ribbon [data-reference='noir'] {
+  letter-spacing: 0.07em;
+}
+.reference-ribbon [data-reference='wizard'] .reference-mark {
+  filter: drop-shadow(0 0 5px #d4b27555);
+}
+.reference-ribbon .reference-toggle {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  background: #090909e8;
+  border: 1px solid #ffffff20;
+  color: #999;
+}
+.reference-reverse .reference-track {
+  animation-direction: reverse;
+}
+@keyframes reference-loop {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes friend-arrival {
+  0% {
+    text-shadow: 0 0 0 transparent;
+  }
+  35% {
+    text-shadow:
+      0 0 18px #f34848b3,
+      2px 0 #f3484855;
+  }
+  100% {
+    text-shadow: 0 0 7px #f3484844;
+  }
+}
+.boot-signature {
+  color: #f15a5a;
+  border-color: #f15a5a66;
+  font-size: 12px;
+  box-shadow: 0 0 28px #f348481a;
+}
+@media (max-width: 767px) {
+  .reference-ribbon {
+    --reference-gap: 36px;
+    padding-block: 18px;
+  }
+  .reference-ribbon .reference-item {
+    font-size: 16px;
+  }
+  .reference-ribbon [data-reference='hacker'] {
+    font-size: 18px;
+  }
+  .reference-ribbon [data-reference='middleearth'] {
+    font-size: 20px;
+  }
+  .boot-signature {
+    font-size: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reference-ribbon .reference-track {
+    width: 100%;
+    animation: none;
+    transform: none;
+  }
+  .reference-ribbon .reference-group {
+    min-width: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 22px 30px;
+    padding: 0 20px;
+    justify-content: center;
+  }
+  .reference-ribbon .reference-group[aria-hidden='true'] {
+    display: none;
+  }
+  .reference-ribbon .reference-quote {
+    animation: none !important;
+  }
+}

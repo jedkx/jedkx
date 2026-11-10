@@ -1,0 +1,764 @@
+/* Shared finishing rules for the active portfolio composition. */
+:root {
+  --ui-muted: #aaa;
+  --ui-rule: #ffffff26;
+}
+.resident-return-passphrase {
+  margin-top: 24px;
+  padding: 16px 0;
+  border-block: 1px solid #ffffff20;
+}
+.resident-return-passphrase > span {
+  display: block;
+  font: 9px var(--font-tech);
+  color: #999;
+  letter-spacing: 0.1em;
+}
+.resident-return-passphrase code {
+  display: block;
+  margin-top: 10px;
+  color: var(--theme-accent);
+  font: 20px var(--font-tech);
+  user-select: all;
+}
+.resident-return-passphrase p {
+  margin-top: 8px;
+  font-size: 12px;
+}
+.secret-receiver-console .secret-action {
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    color 0.2s;
+}
+.secret-receiver-console .secret-action:enabled:hover,
+.secret-receiver-console .secret-action:enabled:focus-visible {
+  color: #f0f0f0;
+  background: #1c1c1c;
+  border-color: var(--theme-accent);
+}
+.resident-chapter .resident-result {
+  justify-content: center;
+  gap: clamp(32px, 6vw, 90px);
+  border: 0;
+  border-radius: 0;
+  background: #050505;
+  padding: 40px 24px;
+  margin-block: 32px;
+}
+.resident-result-peek {
+  position: relative;
+  width: 240px;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  padding-block: 24px;
+}
+.resident-result-peek .resident-block-grid {
+  font-size: 11px;
+  margin-inline: auto;
+}
+.resident-result-seam {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #ffffff20;
+}
+.resident-result-peek > div {
+  position: relative;
+  background: #050505;
+}
+.resident-result-copy h3 {
+  font-size: clamp(32px, 4vw, 58px);
+  margin: 18px 0;
+}
+.resident-result-copy p {
+  color: #aaa;
+  font: 14px/1.8 var(--font-sans);
+}
+.resident-result-copy .secret-action {
+  margin-top: 26px;
+  min-width: 210px;
+}
+.resident-result-copy .secret-action:hover {
+  background: #1c1c1c;
+  color: #eee;
+  border-color: var(--theme-accent);
+}
+@media (max-width: 767px) {
+  .resident-chapter .resident-result {
+    align-items: center;
+    text-align: center;
+    padding: 24px 12px;
+    gap: 12px;
+  }
+  .resident-result-peek {
+    width: 200px;
+    padding-block: 12px;
+  }
+  .resident-result-peek .resident-block-grid {
+    font-size: 9px;
+  }
+}
+#hero .experience-role,
+#hero .name-typeset {
+  pointer-events: auto;
+}
+.receiver-strength {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-block: 10px 14px;
+  color: #999;
+  font: 9px var(--font-tech);
+  letter-spacing: 0.08em;
+}
+.receiver-strength > div {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 16px;
+}
+.receiver-strength i {
+  width: 3px;
+  height: 8px;
+  background: #ffffff18;
+  transition:
+    background 0.25s,
+    transform 0.25s;
+}
+.receiver-strength i:nth-child(3n) {
+  height: 15px;
+}
+.receiver-strength i:nth-child(3n + 1) {
+  height: 11px;
+}
+.receiver-strength i.is-lit {
+  background: var(--theme-accent);
+}
+.contact-tuner.is-locked .receiver-strength {
+  color: var(--theme-accent);
+}
+.contact-tuner.is-locked .receiver-strength i {
+  animation: receiver-whisper 2s ease-in-out infinite alternate;
+}
+.contact-tuner.is-locked .receiver-strength i:nth-child(even) {
+  animation-delay: -0.8s;
+}
+@keyframes receiver-whisper {
+  to {
+    opacity: 0.4;
+    transform: scaleY(0.65);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .contact-tuner.is-locked .receiver-strength i {
+    animation: none;
+  }
+}
+/* GSAP owns the fade; a CSS opacity transition otherwise trails each frame
+   and leaves the loading screen visible just before React removes it. */
+.site-boot.boot-theatre {
+  transition: none;
+}
+.contact-dock {
+  min-height: calc(100svh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-dock-inner {
+  width: 100%;
+}
+.resident-motion .resident-block-grid {
+  display: block;
+  width: 20.4em;
+  height: 12em;
+  image-rendering: pixelated;
+  aspect-ratio: 68 / 40;
+}
+.boot-backstage .resident-mouth {
+  left: 50%;
+  top: 77.5%;
+  width: 1px;
+  height: 1px;
+}
+.site-bottom {
+  padding: 16px var(--signal-gutter, 5vw);
+  background: #050505;
+}
+.site-bottom .contact-dock-bottom {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.hero-cue {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #aaa;
+  pointer-events: none;
+  z-index: 3;
+}
+.hero-cue-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  font: 10px var(--font-tech);
+  letter-spacing: 0.08em;
+}
+.hero-cue-label i {
+  width: 4px;
+  height: 4px;
+  background: var(--theme-accent);
+  border-radius: 50%;
+  animation: cue-pulse 2.8s ease-in-out infinite;
+}
+.hero-cue-line {
+  width: 1px;
+  height: 24px;
+  background: linear-gradient(transparent, #ffffff55);
+  transform-origin: top;
+  animation: cue-line 2.8s ease-in-out infinite;
+}
+.hero-cue svg {
+  animation: cue-arrow 2.8s ease-in-out infinite;
+}
+@keyframes cue-pulse {
+  50% {
+    opacity: 0.35;
+  }
+}
+@keyframes cue-line {
+  50% {
+    transform: scaleY(0.65);
+    opacity: 0.45;
+  }
+}
+@keyframes cue-arrow {
+  50% {
+    transform: translateY(4px);
+    opacity: 0.5;
+  }
+}
+.experience-static .hero-cue {
+  display: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-cue * {
+    animation: none;
+  }
+}
+/* Independent chapters: contact owns the résumé and references; the puzzle has its own stage. */
+.contact-dock .experience-resume {
+  padding-inline: 0;
+  border-top: 1px solid var(--ui-rule);
+  margin-top: 40px;
+}
+.contact-dock .reference-ribbon {
+  margin-block: 20px 48px;
+}
+.resident-chapter {
+  min-height: 0;
+  padding: 64px var(--signal-gutter, 5vw) 32px;
+  background: #070707;
+  border-top: 1px solid var(--ui-rule);
+}
+.resident-chapter .secret-archive {
+  max-width: 1440px;
+  min-height: 0;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  scroll-margin-top: 96px;
+  display: flex;
+  flex-direction: column;
+}
+.resident-chapter .secret-archive-heading {
+  margin: 0;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--ui-rule);
+}
+.resident-chapter .secret-receiver-layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-content: space-evenly;
+  align-items: center;
+  gap: clamp(24px, 4svh, 48px) 8%;
+  padding-top: 28px;
+  min-height: 0;
+}
+.resident-chapter .secret-receiver-intro h4 {
+  font-size: clamp(48px, 6.8vw, 100px);
+  white-space: nowrap;
+  margin: 12px 0;
+}
+.resident-chapter .secret-receiver-intro > p {
+  color: #aaa;
+}
+.resident-chapter .secret-receiver-help {
+  margin-top: 6px;
+}
+.receiver-instrument {
+  border-left: 1px solid var(--ui-rule);
+  padding-left: 32px;
+}
+.resident-chapter .contact-tuner {
+  width: 100%;
+  max-width: none;
+  margin-top: 0;
+}
+.resident-chapter .contact-tuner-scope {
+  height: 100px;
+}
+.resident-chapter .secret-channel-state {
+  margin-top: 16px;
+}
+.resident-chapter .secret-receiver-console {
+  grid-column: 1 / -1;
+  padding: 24px 0 0;
+  border: 0;
+  border-top: 1px solid var(--ui-rule);
+  border-radius: 0;
+  background: none;
+}
+.resident-chapter .secret-auto-keys {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+.resident-chapter .secret-auto-keys li {
+  position: relative;
+  min-height: clamp(110px, 18svh, 160px);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  border: 1px solid #ffffff20;
+  background: #ffffff03;
+}
+.resident-chapter .secret-auto-keys li > span:last-child {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.resident-chapter .secret-auto-keys li.is-received {
+  border-color: var(--theme-accent);
+}
+.resident-chapter .secret-auto-keys code {
+  font-size: clamp(11px, 1.15vw, 16px);
+  letter-spacing: 0;
+}
+.resident-chapter .secret-auto-note {
+  margin: 12px 0;
+  font-size: 11px;
+}
+.resident-chapter .secret-receiver-bottom {
+  border-top: 0;
+  padding-top: 4px;
+}
+.resident-chapter .secret-override {
+  margin-top: 12px;
+  padding-top: 12px;
+}
+.resident-chapter .secret-room {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+@media (max-width: 767px) {
+  .resident-chapter {
+    padding: 48px 22px 28px;
+  }
+  .resident-chapter .secret-archive {
+    min-height: 0;
+  }
+  .resident-chapter .secret-receiver-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 20px;
+  }
+  .resident-chapter .secret-receiver-intro h4 {
+    font-size: clamp(38px, 10vw, 64px);
+  }
+  .resident-chapter .secret-eyebrow {
+    font-size: 9px;
+  }
+  .receiver-instrument {
+    border-left: 0;
+    padding-left: 0;
+  }
+  .resident-chapter .contact-tuner-scope {
+    height: 50px;
+  }
+  .resident-chapter .secret-channel-state {
+    margin-top: 8px;
+  }
+  .resident-chapter .secret-receiver-console {
+    padding: 16px 0 0;
+  }
+  .resident-chapter .secret-auto-keys {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .resident-chapter .secret-auto-keys li {
+    flex-direction: row;
+    align-items: center;
+    min-height: 36px;
+    padding: 8px 10px;
+    gap: 12px;
+    border-bottom: 0;
+  }
+  .resident-chapter .secret-auto-keys li:last-child {
+    border-bottom: 1px solid #ffffff20;
+  }
+  .resident-chapter .secret-auto-keys li > span:last-child {
+    position: static;
+    margin-left: auto;
+  }
+  .resident-chapter .secret-auto-keys code {
+    font-size: 13px;
+  }
+  .resident-chapter .secret-room {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+.project-gallery .work-controls {
+  box-sizing: border-box;
+  width: auto;
+  max-width: none;
+  left: 24px;
+  right: 24px;
+  bottom: max(18px, env(safe-area-inset-bottom));
+  padding: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) auto;
+  align-items: center;
+}
+.project-gallery .work-dots {
+  justify-self: center;
+  max-width: 100%;
+}
+.project-gallery .work-arrows {
+  min-width: 0;
+  width: 108px;
+  gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, 48px);
+  align-items: center;
+  justify-self: end;
+}
+.project-gallery .work-arrows button {
+  width: 48px;
+  height: 48px;
+  min-width: 0;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+.site-boot.boot-restored .boot-lines {
+  margin-top: 72px;
+}
+.boot-page-top {
+  clip-path: inset(0 0 50% 0);
+}
+.boot-page-bottom {
+  clip-path: inset(50% 0 0 0);
+}
+@media (max-width: 767px) {
+  .project-gallery .work-controls {
+    left: 16px;
+    right: 16px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 12px;
+  }
+  .project-gallery .work-controls > .micro-label {
+    display: none;
+  }
+  .project-gallery .work-dots {
+    justify-self: start;
+  }
+  .project-gallery .work-arrows {
+    width: 96px;
+    grid-template-columns: repeat(2, 44px);
+    gap: 8px;
+  }
+  .project-gallery .work-arrows button {
+    width: 44px;
+    height: 44px;
+  }
+  .resident-chapter {
+    padding-inline: 22px;
+  }
+  .site-boot.boot-restored .boot-lines {
+    margin-top: 56px;
+  }
+}
+.project-gallery.experience-static .work-controls {
+  display: none;
+}
+.signal-nav ul a {
+  font-size: 12px;
+}
+#hero .experience-stage .playground-hint {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  bottom: 80px;
+  transform: none;
+  color: var(--ui-muted);
+  font: 11px var(--font-tech);
+  pointer-events: none;
+  animation: hint-arrive 0.8s 1.2s both;
+}
+@keyframes hint-arrive {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+.scene-command {
+  position: absolute;
+  z-index: 7;
+  top: 52px;
+  left: 24px;
+  color: var(--theme-accent);
+  font:
+    13px ui-monospace,
+    monospace;
+  pointer-events: none;
+  visibility: hidden;
+}
+.experience-static .scene-command {
+  display: none;
+}
+.title-letter {
+  white-space: pre;
+}
+.repository-media-label {
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+  padding: 5px 8px;
+  background: #090909d9;
+  color: #bbb;
+  font: 10px var(--font-tech);
+  letter-spacing: 0.08em;
+  pointer-events: none;
+}
+.work-panel .work-description p {
+  font-size: 14px;
+}
+.work-panel .work-description a {
+  font-size: 11px;
+}
+.work-number,
+.work-number > span,
+.work-controls > span {
+  font-size: 11px;
+}
+.experience-resume {
+  gap: 48px;
+  padding-block: clamp(64px, 8vw, 110px);
+}
+.experience-resume h2 {
+  font-size: clamp(25px, 3vw, 44px);
+}
+.resume-summary {
+  display: grid;
+  gap: 14px;
+}
+.resume-summary p {
+  display: grid;
+  gap: 4px;
+  font-size: 14px;
+}
+.resume-summary strong {
+  color: #eee;
+  font-weight: 500;
+}
+.resume-summary span {
+  color: var(--ui-muted);
+  font-size: 12px;
+}
+.contact-dock-reveal {
+  font-size: clamp(46px, 6.2vw, 88px);
+}
+.contact-dock-signature,
+.contact-dock-email,
+.contact-dock-copy,
+.contact-dock-register,
+.contact-dock-links-label {
+  color: var(--ui-muted);
+}
+.contact-dock-email,
+.contact-dock-copy {
+  font-size: 12px;
+}
+.contact-dock-mail {
+  gap: 30px;
+}
+.contact-dock-action {
+  padding-block: 10px;
+}
+.contact-dock-mail .contact-dock-glyph {
+  translate: 0 0;
+  transition: translate 0.3s ease;
+}
+.contact-dock-mail:hover .contact-dock-glyph {
+  translate: 5px -5px;
+}
+.secret-auto-keys li {
+  min-height: 52px;
+}
+.secret-auto-keys .secret-key-waiting,
+.secret-auto-note,
+.secret-receiver-bottom > span,
+.secret-receiver-help,
+.contact-tuner-caption {
+  color: var(--ui-muted);
+}
+.secret-auto-keys li.is-received code {
+  animation: fragment-arrive 0.55s ease both;
+}
+@keyframes fragment-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+    filter: blur(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+.boot-lines {
+  position: relative;
+  height: 24px;
+  min-height: 24px;
+}
+.boot-lines > div {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.boot-lines > .is-visible {
+  opacity: 0;
+  visibility: hidden;
+}
+.boot-lines > .is-current {
+  opacity: 1;
+  visibility: visible;
+  color: #bbb;
+}
+.reference-ribbon .reference-track {
+  animation-duration: 70s;
+}
+@media (min-width: 768px) {
+  .contact-dock-grid {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: 6%;
+  }
+  .contact-dock-mail {
+    padding: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .experience-name {
+    top: 43%;
+  }
+  #hero .experience-stage .playground-hint {
+    bottom: 110px;
+  }
+  .work-panel:not(.is-inspecting) {
+    display: flex;
+    flex-direction: column;
+    padding: 56px 22px 20px;
+    overflow-y: auto;
+  }
+  .work-panel:not(.is-inspecting) .repository-visual {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: clamp(150px, 29svh, 280px);
+    flex-shrink: 0;
+  }
+  .work-panel:not(.is-inspecting) .repository-visual-inner {
+    inset: 0;
+  }
+  .work-panel:not(.is-inspecting) .work-copy {
+    position: relative;
+    inset: auto;
+    margin-top: 24px;
+  }
+  .work-panel .work-copy h2 {
+    font-size: clamp(28px, 8vw, 42px);
+  }
+  .work-panel .work-description {
+    margin-top: 12px;
+    gap: 10px;
+  }
+  .work-panel .work-description p {
+    font-size: 13px;
+    line-height: 1.55;
+  }
+  .work-panel .work-number {
+    margin-bottom: 10px;
+  }
+  .experience-resume {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+  }
+  .experience-resume .signal-link {
+    align-self: flex-start;
+  }
+  .contact-dock-grid {
+    gap: 36px;
+    padding-block: 36px;
+  }
+  .contact-dock-identity {
+    display: block;
+  }
+  .contact-dock-reveal {
+    font-size: clamp(44px, 12vw, 64px);
+  }
+  .contact-dock-signature {
+    width: 100%;
+    margin-top: 14px;
+  }
+  .secret-receiver-console {
+    padding: 20px 16px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .playground-hint,
+  .secret-auto-keys li.is-received code {
+    animation: none;
+  }
+  .contact-dock-mail .contact-dock-glyph {
+    transition: none;
+  }
+}

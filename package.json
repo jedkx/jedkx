@@ -8,6 +8,8 @@
     "sync": "node scripts/sync-github.mjs",
     "snake": "node scripts/generate-snake.mjs",
     "check": "node scripts/check.mjs",
-    "preview": "node scripts/preview.mjs"
+    "preview": "node scripts/preview.mjs",
+    "animations:sync": "node scripts/sync-animations.mjs",
+    "animations:check": "node scripts/check-animations.mjs"
   }
 }

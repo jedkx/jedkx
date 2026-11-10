@@ -1,0 +1,644 @@
+{
+  "$comment": "Registry of every jedkx animation. Source of truth for the code is jedkx/J-Portfolio; files are mirrored into animations/vendor by scripts/sync-animations.mjs. targets: native = runs as-is, portable = can be re-implemented (frames/timings are enough), no = depends on browser input/DOM/JS.",
+  "source": {
+    "repo": "jedkx/J-Portfolio",
+    "branch": "main"
+  },
+  "animations": [
+    {
+      "id": "resident-pixel",
+      "name": "Resident — pixel sprite",
+      "kind": "sprite",
+      "summary": "The original 68×40 resident: eye/mouth atlases, named clips, authored frame durations, alpha-cut pupil tracking, frog-like overlapping blinks, ambient moods (notice, sleepy, search, curious, startle).",
+      "source": [
+        "art/resident/README.md",
+        "art/resident/animation.json",
+        "art/resident/sheet.json",
+        "art/resident/sheet.png",
+        "art/resident/eye-left.json",
+        "art/resident/eye-left.png",
+        "art/resident/eye-right.json",
+        "art/resident/eye-right.png",
+        "art/resident/mouth.json",
+        "art/resident/mouth.png",
+        "src/assets/residentAnimation.ts",
+        "src/components/game/HiddenResident.tsx"
+      ],
+      "keyframes": [],
+      "targets": {
+        "web": "native",
+        "svg": "native",
+        "terminal": "portable"
+      },
+      "usedIn": [
+        "J-Portfolio",
+        "profile-readme"
+      ]
+    },
+    {
+      "id": "resident-block",
+      "name": "Resident — block ASCII (Nox)",
+      "kind": "frames",
+      "summary": "34×12 block-character expression sheet, 14 frames with authored durations (blink, look left/right, wide, happy, chew) plus 2×2-quadrant pupil gaze. The terminal form of the resident.",
+      "source": [
+        "src/assets/residentBlockFrames.ts",
+        "src/assets/resident.ascii.json",
+        "src/assets/resident.asciimtn",
+        "src/assets/ResidentMotionExport.tsx"
+      ],
+      "keyframes": [],
+      "targets": {
+        "web": "native",
+        "svg": "portable",
+        "terminal": "native"
+      },
+      "usedIn": [
+        "J-Portfolio",
+        "jedkx-cli"
+      ]
+    },
+    {
+      "id": "resident-cameo",
+      "name": "Resident cameo, peek and chew",
+      "kind": "css",
+      "summary": "Resident peeks in, chews (0.2s alternate), boot-screen face peek; blinking caret in its speech bubble.",
+      "source": [
+        "src/styles/secret-game.css"
+      ],
+      "keyframes": [
+        "resident-peek",
+        "resident-chew",
+        "boot-face-peek",
+        "resident-message-blink"
+      ],
+      "targets": {
+        "web": "native",
+        "svg": "portable",
+        "terminal": "portable"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    },
+    {
+      "id": "boot-sequence",
+      "name": "Loading / boot sequence",
+      "kind": "gsap",
+      "summary": "Single GSAP clock: split-page shutters, stolen letter travelling into the resident's mouth, chewing at 0.85× speed, recovery, shutters close; progress trace. Skip + reduced-motion paths.",
+      "source": [
+        "src/components/layout/LoadingScreen.tsx",
+        "src/assets/residentIntro.ts",
+        "src/styles/secret-game.css"
+      ],
+      "keyframes": [
+        "boot-trace"
+      ],
+      "targets": {
+        "web": "native",
+        "svg": "portable",
+        "terminal": "portable"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    },
+    {
+      "id": "terminal-caret",
+      "name": "Terminal caret",
+      "kind": "css",
+      "summary": "Blinking block caret (step-end) in terminals and neofetch.",
+      "source": [
+        "src/styles/main.css",
+        "src/styles/experience.css",
+        "src/components/ui/Terminal.tsx"
+      ],
+      "keyframes": [
+        "cursor-blink",
+        "terminal-live-caret"
+      ],
+      "targets": {
+        "web": "native",
+        "svg": "native",
+        "terminal": "native"
+      },
+      "usedIn": [
+        "J-Portfolio",
+        "profile-readme",
+        "jedkx-cli"
+      ]
+    },
+    {
+      "id": "text-reveal",
+      "name": "Typewriter / text reveal",
+      "kind": "js",
+      "summary": "Character-by-character typing with punctuation pauses; resident mouth follows the typing.",
+      "source": [
+        "src/components/ui/Typewriter.tsx",
+        "src/utils/textReveal.ts"
+      ],
+      "keyframes": [],
+      "targets": {
+        "web": "native",
+        "svg": "native",
+        "terminal": "portable"
+      },
+      "usedIn": [
+        "J-Portfolio",
+        "profile-readme",
+        "jedkx-cli"
+      ]
+    },
+    {
+      "id": "glitch-text",
+      "name": "Glitch text",
+      "kind": "js",
+      "summary": "Glitching text with offset colour slices (plus Tailwind `animate-glitch` utility).",
+      "source": [
+        "src/components/ui/GlitchText.tsx",
+        "tailwind.config.js"
+      ],
+      "keyframes": [],
+      "targets": {
+        "web": "native",
+        "svg": "portable",
+        "terminal": "portable"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    },
+    {
+      "id": "fuzzy-text",
+      "name": "Fuzzy text (React Bits)",
+      "kind": "canvas",
+      "summary": "Canvas-rendered text with subtle idle distortion and stronger hover/tap distortion; plain-text reduced-motion fallback.",
+      "source": [
+        "src/components/react-bits/FuzzyText.tsx",
+        "src/components/react-bits/LICENSE.md",
+        "src/components/react-bits/README.md"
+      ],
+      "keyframes": [],
+      "targets": {
+        "web": "native",
+        "svg": "no",
+        "terminal": "no"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    },
+    {
+      "id": "ascii-word",
+      "name": "ASCII word / initial",
+      "kind": "css",
+      "summary": "Large ASCII lettering with a soft glow pulse.",
+      "source": [
+        "src/components/ui/AsciiWord.tsx",
+        "src/components/ui/AsciiInitial.tsx",
+        "src/styles/main.css"
+      ],
+      "keyframes": [
+        "ascii-glow-pulse"
+      ],
+      "targets": {
+        "web": "native",
+        "svg": "native",
+        "terminal": "portable"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    },
+    {
+      "id": "particle-field",
+      "name": "Hero particle playground",
+      "kind": "canvas",
+      "summary": "Full-screen particle physics: pointer charge and heat, release burst wave, palette by heat; pauses off-screen / hidden / until boot completes.",
+      "source": [
+        "src/components/layout/ParticleBackground.tsx",
+        "src/hooks/useVisibleAnimationFrame.ts",
+        "src/components/sections/HeroSection.tsx"
+      ],
+      "keyframes": [],
+      "targets": {
+        "web": "native",
+        "svg": "no",
+        "terminal": "no"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    },
+    {
+      "id": "hero-cue",
+      "name": "Hero cue and hint",
+      "kind": "css",
+      "summary": "Scroll cue: pulsing label, travelling line, bobbing arrow; playground hint fades in.",
+      "source": [
+        "src/styles/refinement.css"
+      ],
+      "keyframes": [
+        "cue-pulse",
+        "cue-line",
+        "cue-arrow",
+        "hint-arrive"
+      ],
+      "targets": {
+        "web": "native",
+        "svg": "native",
+        "terminal": "portable"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    },
+    {
+      "id": "scroll-line",
+      "name": "Scroll line",
+      "kind": "css",
+      "summary": "Vertical scroll indicator line.",
+      "source": [
+        "src/styles/main.css"
+      ],
+      "keyframes": [
+        "scroll-line-animate"
+      ],
+      "targets": {
+        "web": "native",
+        "svg": "native",
+        "terminal": "no"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    },
+    {
+      "id": "custom-cursor",
+      "name": "Custom cursor and key hover",
+      "kind": "js",
+      "summary": "Dot + ring cursor that settles on targets and reads particle charge via CSS variables; key-hover fill/border animation.",
+      "source": [
+        "src/components/layout/CustomCursor.tsx",
+        "src/styles/experience.css"
+      ],
+      "keyframes": [
+        "key-cursor-fill",
+        "key-cursor-border"
+      ],
+      "targets": {
+        "web": "native",
+        "svg": "no",
+        "terminal": "no"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    },
+    {
+      "id": "target-cursor",
+      "name": "Target cursor (React Bits)",
+      "kind": "gsap",
+      "summary": "Spinning corner-bracket cursor that snaps around hover targets.",
+      "source": [
+        "src/components/react-bits/TargetCursor.tsx",
+        "src/components/react-bits/TargetCursor.css"
+      ],
+      "keyframes": [],
+      "targets": {
+        "web": "native",
+        "svg": "no",
+        "terminal": "no"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    },
+    {
+      "id": "magnet",
+      "name": "Magnetic elements",
+      "kind": "js",
+      "summary": "Elements pulled toward the pointer (React Bits Magnet + magneticEffect util).",
+      "source": [
+        "src/components/react-bits/Magnet.tsx",
+        "src/utils/magneticEffect.ts"
+      ],
+      "keyframes": [],
+      "targets": {
+        "web": "native",
+        "svg": "no",
+        "terminal": "no"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    },
+    {
+      "id": "spotlight-card",
+      "name": "Spotlight card (React Bits)",
+      "kind": "js",
+      "summary": "Radial spotlight following the pointer inside a card.",
+      "source": [
+        "src/components/react-bits/SpotlightCard.tsx",
+        "src/components/react-bits/SpotlightCard.css"
+      ],
+      "keyframes": [],
+      "targets": {
+        "web": "native",
+        "svg": "no",
+        "terminal": "no"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    },
+    {
+      "id": "motion-tracker",
+      "name": "Motion tracker",
+      "kind": "js",
+      "summary": "Pointer motion tracker readout.",
+      "source": [
+        "src/components/ui/MotionTracker.tsx"
+      ],
+      "keyframes": [],
+      "targets": {
+        "web": "native",
+        "svg": "no",
+        "terminal": "no"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    },
+    {
+      "id": "marquee",
+      "name": "Marquee",
+      "kind": "css",
+      "summary": "Endless horizontal text scroll (30s linear).",
+      "source": [
+        "src/components/ui/Marquee.tsx",
+        "src/styles/main.css"
+      ],
+      "keyframes": [
+        "marquee-scroll"
+      ],
+      "targets": {
+        "web": "native",
+        "svg": "native",
+        "terminal": "portable"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    },
+    {
+      "id": "reference-ribbon",
+      "name": "Reference ribbon",
+      "kind": "framer-motion",
+      "summary": "Scroll-velocity reference ribbon (React Bits ScrollVelocity); 55s loop, friend arrival; RAF stops off-screen and for reduced motion.",
+      "source": [
+        "src/components/react-bits/ScrollVelocity.tsx",
+        "src/components/react-bits/ScrollVelocity.css",
+        "src/styles/reference-ribbon.css"
+      ],
+      "keyframes": [
+        "reference-loop",
+        "friend-arrival"
+      ],
+      "targets": {
+        "web": "native",
+        "svg": "portable",
+        "terminal": "portable"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    },
+    {
+      "id": "atmosphere",
+      "name": "Atmosphere: scanlines, noise, vignette, VHS",
+      "kind": "css",
+      "summary": "Screen-wide scanlines, noise, vignette overlays; VHS tracking band (14s); Tailwind scanline / grid-pattern utilities.",
+      "source": [
+        "src/components/layout/AtmosphereOverlays.tsx",
+        "src/styles/experience.css",
+        "tailwind.config.js"
+      ],
+      "keyframes": [
+        "vhs-tracking"
+      ],
+      "targets": {
+        "web": "native",
+        "svg": "native",
+        "terminal": "no"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    },
+    {
+      "id": "utility-motion",
+      "name": "Utility motion: gradient, shimmer, float, pulse",
+      "kind": "css",
+      "summary": "Reusable classes: animated gradient, shimmer sweep (skill bars), float, pulse dot, pulsing sensor ring, red blip pulse; Tailwind pulse-glow.",
+      "source": [
+        "src/styles/main.css",
+        "tailwind.config.js",
+        "src/components/ui/SkillBar.tsx"
+      ],
+      "keyframes": [
+        "gradient",
+        "shimmer",
+        "float",
+        "pulse-dot",
+        "pulse-ring",
+        "blip-pulse-red"
+      ],
+      "targets": {
+        "web": "native",
+        "svg": "native",
+        "terminal": "portable"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    },
+    {
+      "id": "radar",
+      "name": "Radar sweep and waves",
+      "kind": "css",
+      "summary": "Rotating radar sweep with expanding waves.",
+      "source": [
+        "src/styles/main.css"
+      ],
+      "keyframes": [
+        "radar-spin",
+        "radar-wave-expand"
+      ],
+      "targets": {
+        "web": "native",
+        "svg": "native",
+        "terminal": "portable"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    },
+    {
+      "id": "fragment-sonar",
+      "name": "Fragment sonar",
+      "kind": "css",
+      "summary": "Sonar screen mapping on-screen words; 4s sweep and echo rings on contacts.",
+      "source": [
+        "src/components/game/FragmentSonar.tsx",
+        "src/components/game/fragment-sonar.css"
+      ],
+      "keyframes": [
+        "sonar-turn",
+        "sonar-echo"
+      ],
+      "targets": {
+        "web": "native",
+        "svg": "native",
+        "terminal": "portable"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    },
+    {
+      "id": "secret-game",
+      "name": "Discovery game (keys, decrypt, archive)",
+      "kind": "js",
+      "summary": "Five hidden keys: arrival into slots, hint call, 18-step decrypt bar, secret archive and site rift reveal.",
+      "source": [
+        "src/components/game/SecretGame.tsx",
+        "src/components/game/SecretArchive.tsx",
+        "src/components/game/SiteRift.tsx",
+        "src/styles/secret-game.css",
+        "src/styles/refinement.css"
+      ],
+      "keyframes": [
+        "secret-key-arrival",
+        "secret-hint-call",
+        "secret-decrypt",
+        "fragment-arrive"
+      ],
+      "targets": {
+        "web": "native",
+        "svg": "no",
+        "terminal": "portable"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    },
+    {
+      "id": "contact-tuner",
+      "name": "Contact receiver / tuner",
+      "kind": "css",
+      "summary": "Receiver strength whisper, routing pulse along the signal path, test ping.",
+      "source": [
+        "src/components/sections/ContactTuner.tsx",
+        "src/styles/contact-station.css",
+        "src/styles/refinement.css"
+      ],
+      "keyframes": [
+        "receiver-whisper",
+        "contact-route-signal",
+        "contact-test-ping"
+      ],
+      "targets": {
+        "web": "native",
+        "svg": "native",
+        "terminal": "portable"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    },
+    {
+      "id": "signal-run",
+      "name": "Signal Run (paddle game)",
+      "kind": "canvas",
+      "summary": "Endless paddle-and-obstacle game: capped-time physics with substeps, bounded trails and sparks, pauses off-screen.",
+      "source": [
+        "src/components/sections/SignalPaddle.tsx",
+        "src/styles/signal-play.css"
+      ],
+      "keyframes": [],
+      "targets": {
+        "web": "native",
+        "svg": "no",
+        "terminal": "portable"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    },
+    {
+      "id": "contribution-graph",
+      "name": "Contribution graph",
+      "kind": "js",
+      "summary": "Animated GitHub contribution calendar on the site.",
+      "source": [
+        "src/components/sections/ContributionGraph.tsx"
+      ],
+      "keyframes": [],
+      "targets": {
+        "web": "native",
+        "svg": "native",
+        "terminal": "portable"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    },
+    {
+      "id": "contribution-snake",
+      "name": "Contribution snake arcade",
+      "kind": "svg-css",
+      "summary": "Snake that eats every contribution cell along a planned route, grows (bounded), bites, winks, fades and loops; static reduced-motion variant. Lives in this repo (scripts/generate-snake.mjs), not in J-Portfolio.",
+      "source": [],
+      "local": [
+        "scripts/generate-snake.mjs",
+        "scripts/snake-route.mjs",
+        "scripts/style-snake.mjs",
+        "assets/snake-dark.svg"
+      ],
+      "keyframes": [],
+      "targets": {
+        "web": "native",
+        "svg": "native",
+        "terminal": "portable"
+      },
+      "usedIn": [
+        "profile-readme"
+      ]
+    },
+    {
+      "id": "portfolio-scroll",
+      "name": "Chapter navigation and project gallery motion",
+      "kind": "gsap",
+      "summary": "Sticky project gallery that settles on a project, chapter navigation following layout shifts, section entrance moves.",
+      "source": [
+        "src/features/portfolio/usePortfolioScene.ts",
+        "src/components/sections/PortfolioExperience.tsx",
+        "src/components/layout/Navigation.tsx",
+        "src/components/sections/ProjectsSection.tsx",
+        "src/components/sections/AboutSection.tsx",
+        "src/components/sections/FooterSection.tsx",
+        "src/hooks/useUtils.ts",
+        "src/App.tsx"
+      ],
+      "keyframes": [],
+      "targets": {
+        "web": "native",
+        "svg": "no",
+        "terminal": "no"
+      },
+      "usedIn": [
+        "J-Portfolio"
+      ]
+    }
+  ]
+}

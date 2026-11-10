@@ -1,0 +1,714 @@
+/* ============================================
+   Portfolio base styles
+   Dark Void Aesthetic
+   ============================================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   CSS CUSTOM PROPERTIES
+   ============================================ */
+:root {
+  /* Colors - Void Theme */
+  --color-void: #050508;
+  --color-terminal: #f5f5f5;
+  --color-alert: #ff3333;
+  --theme-accent: #ff5555;
+  --theme-accent-rgb: 255 85 85;
+  --color-primary: #ffffff;
+  --color-background: #050508;
+  --color-surface: #0c0c10;
+  --color-surface-light: #14141a;
+  --color-text: #f5f5f5;
+  --color-text-muted: #ededed;
+  --color-border: rgba(255, 255, 255, 0.28);
+
+  /* Fonts */
+  --font-sans: 'Space Grotesk', system-ui, sans-serif;
+  --font-display: 'Syne', system-ui, sans-serif;
+  --font-tech: 'Share Tech Mono', monospace;
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.2) var(--color-void);
+  }
+
+  body {
+    @apply bg-void text-terminal antialiased;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-void);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.2);
+    border-radius: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.4);
+  }
+
+  ::selection {
+    @apply bg-white/20 text-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply font-bold tracking-tight;
+  }
+
+  :focus-visible {
+    outline: 2px solid rgba(255, 255, 255, 0.9);
+    outline-offset: 2px;
+  }
+}
+
+.cursor-hidden,
+.cursor-hidden * {
+  cursor: none;
+}
+
+/* Prevent text selection in Hero area for background interaction */
+#hero {
+  user-select: none;
+}
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 10000;
+  padding: 8px 12px;
+  background: rgba(0, 0, 0, 0.9);
+  color: #ffffff;
+  font-family: var(--font-tech);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transform: translateY(-200%);
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
+}
+
+/* ============================================
+   ATMOSPHERE OVERLAYS
+   ============================================ */
+.scanlines {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 55;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0) 50%,
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.1)
+  );
+  background-size: 100% 3px;
+  opacity: 0.15;
+}
+
+.noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.05;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+}
+
+.vignette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 45;
+  background: radial-gradient(circle at center, transparent 55%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+/* ============================================
+   CURSOR STYLES
+   ============================================ */
+.cursor-dot {
+  width: 4px;
+  height: 4px;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  pointer-events: none;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-ring {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+  pointer-events: none;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease-out, height 0.3s ease-out, border-color 0.3s, background-color 0.3s;
+}
+
+.cursor-trail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9997;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+
+body.holding .cursor-ring {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-color: white;
+  box-shadow: 0 0 15px white;
+}
+
+body.hovering .cursor-ring {
+  width: 60px;
+  height: 60px;
+  border-color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.05);
+  border-style: dashed;
+}
+
+/* ============================================
+   HERO GLOW EFFECT
+   ============================================ */
+.hero-glow {
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.12) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body.holding .hero-glow {
+  background: radial-gradient(circle, rgba(255, 51, 51, 0.15) 0%, transparent 70%);
+  width: 600px;
+  height: 600px;
+}
+
+/* Reveal Door Animation */
+.reveal-door {
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+/* ============================================
+   MARQUEE
+   ============================================ */
+.marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background: #0a0a0e;
+  border-top: 1px solid #2a2a2a;
+  border-bottom: 1px solid #2a2a2a;
+  padding: 0.75rem 0;
+  position: relative;
+  z-index: 20;
+}
+
+.marquee-inner {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee-scroll 30s linear infinite;
+}
+
+.marquee-reverse .marquee-inner {
+  animation-direction: reverse;
+}
+
+.marquee-item {
+  font-family: var(--font-tech);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: #888;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+@keyframes marquee-scroll {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ============================================
+   PROJECT CARDS - FILES STYLE
+   ============================================ */
+.files-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  font-family: var(--font-tech);
+  font-size: 12px;
+  color: #aaa;
+  z-index: 30;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+.project-card-file {
+  position: relative;
+  width: 60vw;
+  max-width: 900px;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: transform 0.4s;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: #000;
+  overflow: hidden;
+}
+
+.project-card-file::before {
+  content: 'FILE_ARCHIVE';
+  position: absolute;
+  top: -20px;
+  left: -1px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 2px 10px;
+  font-family: var(--font-tech);
+  font-size: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: none;
+}
+
+.project-card-file:hover {
+  border-color: white;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+  transform: scale(1.02);
+}
+
+.project-img-grayscale {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(1.2) brightness(0.8);
+  opacity: 0.7;
+  transition: all 0.5s ease;
+}
+
+.project-card-file:hover .project-img-grayscale {
+  filter: grayscale(0%) contrast(1.1) brightness(1.1);
+  opacity: 1;
+}
+
+/* ============================================
+   MOTION TRACKER
+   ============================================ */
+.tracker-ui {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, rgba(0, 20, 0, 0.1), transparent);
+}
+
+@media (max-width: 768px) {
+  .tracker-ui {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 640px) {
+  .tracker-ui {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+.tracker-grid {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
+  opacity: 0.3;
+}
+
+.tracker-scan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5));
+  transform-origin: left center;
+  will-change: transform;
+  z-index: 2;
+}
+
+@keyframes radar-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.sensor-blip {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -6px 0 0 -6px;
+  transition: opacity 0.15s ease, box-shadow 0.15s ease;
+  will-change: transform, opacity;
+  z-index: 3;
+}
+
+/* Remove old animations - now controlled by JS */
+.blip-pressed {
+  animation: blip-pulse-red 0.6s ease-in-out infinite;
+}
+
+@keyframes blip-pulse-red {
+  0%, 100% { 
+    box-shadow: 0 0 10px 2px rgba(255, 51, 51, 0.8);
+  }
+  50% { 
+    box-shadow: 0 0 25px 6px rgba(255, 51, 51, 1);
+  }
+}
+
+.sensor-ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  animation: pulse-ring 2s infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 0.5; }
+  100% { transform: scale(1.1); opacity: 0; }
+}
+
+/* Radar Waves - Multiple expanding circles */
+.radar-wave {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  animation: radar-wave-expand 4s ease-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.radar-wave:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.radar-wave:nth-child(3) {
+  animation-delay: 4s;
+}
+
+.radar-wave:nth-child(4) {
+  animation-delay: 6s;
+}
+
+.radar-wave:nth-child(5) {
+  animation-delay: 8s;
+}
+
+@keyframes radar-wave-expand {
+  0% {
+    width: 20px;
+    height: 20px;
+    opacity: 0.4;
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    opacity: 0.25;
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+  100% {
+    width: 280px;
+    height: 280px;
+    opacity: 0;
+    border-color: rgba(255, 255, 255, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  @keyframes radar-wave-expand {
+    0% {
+      width: 15px;
+      height: 15px;
+      opacity: 0.7;
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+    50% {
+      opacity: 0.35;
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+    100% {
+      width: 200px;
+      height: 200px;
+      opacity: 0;
+      border-color: rgba(255, 255, 255, 0);
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  @keyframes radar-wave-expand {
+    0% {
+      width: 12px;
+      height: 12px;
+      opacity: 0.7;
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+    50% {
+      opacity: 0.35;
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+    100% {
+      width: 160px;
+      height: 160px;
+      opacity: 0;
+      border-color: rgba(255, 255, 255, 0);
+    }
+  }
+}
+
+/* ============================================
+   CV / NEOFETCH ANIMATIONS
+   ============================================ */
+@keyframes ascii-glow-pulse {
+  0%, 100% { text-shadow: 0 0 6px var(--ascii-glow-color, rgba(255, 51, 51, 0.45)); }
+  50%       { text-shadow: 0 0 18px var(--ascii-glow-color, rgba(255, 51, 51, 0.85)), 0 0 35px var(--ascii-glow-color-soft, rgba(255, 51, 51, 0.25)); }
+}
+
+.text-alert {
+  color: var(--theme-accent) !important;
+}
+
+.bg-alert {
+  background-color: var(--theme-accent) !important;
+}
+
+.border-alert {
+  border-color: var(--theme-accent) !important;
+}
+
+.hover\:text-alert:hover {
+  color: var(--theme-accent) !important;
+}
+
+.text-alert\/20 {
+  color: rgb(var(--theme-accent-rgb) / 0.2) !important;
+}
+
+.border-alert\/30 {
+  border-color: rgb(var(--theme-accent-rgb) / 0.3) !important;
+}
+.ascii-glow-pulse {
+  animation: ascii-glow-pulse 3s ease-in-out infinite;
+}
+
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+.terminal-cursor {
+  animation: cursor-blink 1s step-end infinite;
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+@keyframes gradient {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-gradient { animation: gradient 3s ease infinite; }
+.animate-shimmer { animation: shimmer 2s infinite; }
+.animate-float { animation: float 3s ease-in-out infinite; }
+
+/* ============================================
+   STATUS BADGE
+   ============================================ */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-family: var(--font-tech);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: #888;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.status-badge:hover {
+  border-color: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.07);
+  color: #ccc;
+}
+
+.pulse-dot {
+  width: 6px;
+  height: 6px;
+  background: #ff3333;
+  border-radius: 50%;
+  animation: pulse-dot 2s ease-in-out infinite;
+  box-shadow: 0 0 8px 2px rgba(255, 51, 51, 0.4);
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+/* ============================================
+   SCROLL INDICATOR
+   ============================================ */
+.scroll-line {
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.75), transparent);
+  animation: scroll-line-animate 2s ease-in-out infinite;
+}
+
+@keyframes scroll-line-animate {
+  0%, 100% { 
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  50% { 
+    opacity: 0.5;
+    transform: scaleY(0.7);
+  }
+}
+
+/* ============================================
+   UTILITIES
+   ============================================ */
+@layer utilities {
+  .text-stroke {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+    color: transparent;
+  }
+
+  .mix-blend-diff {
+    mix-blend-mode: difference;
+  }
+}
+
+/* Hide scrollbar during horizontal scroll sections */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Desktop only cursor */
+@media (max-width: 1023px) {
+  .cursor-dot,
+  .cursor-ring {
+    display: none !important;
+  }
+  
+  * {
+    cursor: auto !important;
+  }
+}
+

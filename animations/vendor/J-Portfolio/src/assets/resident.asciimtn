@@ -1,0 +1,3050 @@
+{
+  "version": "1.0.0",
+  "name": "Hidden resident — expressions",
+  "canvas": {
+    "width": 34,
+    "height": 12,
+    "canvasBackgroundColor": "#000000",
+    "showGrid": true
+  },
+  "animation": {
+    "frames": [
+      {
+        "id": "73b87344-942e-41e7-ab07-0eddeb932229",
+        "name": "Block expression 0",
+        "duration": 1400,
+        "data": {
+          "4,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "26,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "27,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "3,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "10,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "23,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "30,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "3,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "10,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "23,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "30,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "26,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "27,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "13,8": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "20,8": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "14,9": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "15,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "16,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "17,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "18,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "19,9": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          }
+        }
+      },
+      {
+        "id": "89368453-35af-48b9-8b9e-0039870fd4c7",
+        "name": "Block expression 1",
+        "duration": 55,
+        "data": {
+          "24,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "26,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "27,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "3,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "10,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "23,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "30,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "3,5": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "10,5": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "23,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "30,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "26,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "27,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "13,8": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "20,8": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "14,9": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "15,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "16,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "17,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "18,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "19,9": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          }
+        }
+      },
+      {
+        "id": "0e2a0c6c-6fa5-490d-9913-36b80dba3c6b",
+        "name": "Block expression 2",
+        "duration": 85,
+        "data": {
+          "3,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "10,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "23,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "26,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "27,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "30,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "13,8": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "20,8": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "14,9": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "15,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "16,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "17,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "18,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "19,9": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          }
+        }
+      },
+      {
+        "id": "80ca8276-7f10-461d-8cb6-7bfa565bf64f",
+        "name": "Block expression 3",
+        "duration": 65,
+        "data": {
+          "4,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "3,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "10,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "23,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "26,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "27,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "30,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "3,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "10,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "23,5": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "30,5": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "13,8": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "20,8": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "14,9": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "15,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "16,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "17,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "18,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "19,9": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          }
+        }
+      },
+      {
+        "id": "edcb8b1b-77aa-4698-aaac-7919415672bf",
+        "name": "Block expression 4",
+        "duration": 1100,
+        "data": {
+          "4,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "26,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "27,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "3,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "10,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "23,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "30,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "3,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "10,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "23,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "30,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "26,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "27,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "13,8": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "20,8": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "14,9": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "15,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "16,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "17,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "18,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "19,9": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          }
+        }
+      },
+      {
+        "id": "d5fc978e-3bc6-4542-ad85-67ab209c035e",
+        "name": "Block expression 5",
+        "duration": 420,
+        "data": {
+          "4,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "26,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "27,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "3,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "10,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "23,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "27,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "30,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "3,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "10,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "23,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "27,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "30,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "26,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "27,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "15,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "16,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "17,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "18,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          }
+        }
+      },
+      {
+        "id": "afe065c9-0a6d-4b08-a40f-d30b493eb376",
+        "name": "Block expression 6",
+        "duration": 420,
+        "data": {
+          "4,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "26,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "27,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "3,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "10,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "23,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "26,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "30,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "3,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "10,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "23,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "26,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "30,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "26,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "27,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "15,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "16,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "17,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "18,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          }
+        }
+      },
+      {
+        "id": "3985ca33-2ffd-4309-ac1d-42d78f76ae08",
+        "name": "Block expression 7",
+        "duration": 240,
+        "data": {
+          "4,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "26,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "27,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "3,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "10,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "23,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "30,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "3,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "10,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "23,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "30,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "26,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "27,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "15,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "16,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "17,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "18,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          }
+        }
+      },
+      {
+        "id": "372d6f7d-5879-46e3-8fb4-007f40682d03",
+        "name": "Block expression 8",
+        "duration": 450,
+        "data": {
+          "4,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "26,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "27,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "3,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,5": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,5": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "10,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "23,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,5": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,5": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "30,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "15,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "16,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "17,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "18,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          }
+        }
+      },
+      {
+        "id": "84672455-f580-4c5b-baa4-abf4ca9be8f0",
+        "name": "Block expression 9",
+        "duration": 180,
+        "data": {
+          "4,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "26,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "27,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "3,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "10,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "23,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "30,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "3,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "10,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "23,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "30,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "26,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "27,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "14,8": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "15,8": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "16,8": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "17,8": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "18,8": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "19,8": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "13,9": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "14,9": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "15,9": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "16,9": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "17,9": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "18,9": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "19,9": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "20,9": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "14,10": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "15,10": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "16,10": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "17,10": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "18,10": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "19,10": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          }
+        }
+      },
+      {
+        "id": "3ed59af3-6937-4da8-8703-f10d222d400b",
+        "name": "Block expression 10",
+        "duration": 115,
+        "data": {
+          "4,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "26,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "27,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "3,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,5": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,5": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "10,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "23,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,5": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,5": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "30,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "14,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "15,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "16,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "17,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "18,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "19,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          }
+        }
+      },
+      {
+        "id": "f963b604-0a16-4918-8823-88d7079b0987",
+        "name": "Block expression 11",
+        "duration": 200,
+        "data": {
+          "3,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "10,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "23,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "26,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "27,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "30,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "15,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "16,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "17,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "18,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          }
+        }
+      },
+      {
+        "id": "294a3faa-1410-4957-8f3a-53aaacb97664",
+        "name": "Block expression 12",
+        "duration": 650,
+        "data": {
+          "4,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "26,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "27,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,4": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "3,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,5": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,5": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "10,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "23,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,5": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,5": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "30,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "13,8": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "20,8": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "14,9": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "15,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "16,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "17,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "18,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "19,9": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          }
+        }
+      },
+      {
+        "id": "588ac2c9-4476-4761-bf8d-2493a324e090",
+        "name": "Block expression 13",
+        "duration": 130,
+        "data": {
+          "4,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,3": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,3": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "3,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "10,4": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "3,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "10,5": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "23,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "24,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "25,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "26,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "27,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "28,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "29,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "30,5": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "4,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "5,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "6,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "7,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "8,6": {
+            "char": "█",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "9,6": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "13,8": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "20,8": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "14,9": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "15,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "16,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "17,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "18,9": {
+            "char": "▄",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          },
+          "19,9": {
+            "char": "▀",
+            "color": "#e8e8eb",
+            "bgColor": "transparent"
+          }
+        }
+      }
+    ],
+    "currentFrameIndex": 0,
+    "frameRate": 12,
+    "looping": true
+  },
+  "tools": {
+    "selectedColor": "#FFFFFF",
+    "selectedBgColor": "transparent",
+    "selectedCharacter": "@"
+  }
+}

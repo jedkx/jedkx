@@ -1,0 +1,239 @@
+/* Contact is a full composition: identity and local context opposite the direct channel. */
+.contact-station {
+  min-height: calc(100svh - 82px);
+  padding-block: 24px;
+}
+.contact-station .contact-dock-inner {
+  min-height: calc(100svh - 130px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-station .contact-dock-grid {
+  flex: 1;
+  align-items: center;
+  gap: 8%;
+  padding-block: clamp(20px, 3svh, 36px);
+}
+.contact-station .contact-dock-identity {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-station .contact-dock-reveal {
+  font-size: clamp(46px, 6.2vw, 92px);
+}
+.contact-station .contact-dock-signature {
+  gap: 16px;
+  font-size: 11px;
+}
+.contact-location {
+  margin-top: clamp(24px, 4svh, 44px);
+  max-width: 420px;
+}
+.contact-routing {
+  width: 100%;
+  height: 76px;
+  overflow: visible;
+  stroke: #ffffff28;
+  stroke-width: 1;
+}
+.contact-routing circle {
+  fill: #090909;
+  stroke: #999;
+}
+.contact-routing .contact-routing-pulse {
+  stroke: var(--theme-accent);
+  stroke-dasharray: 20 300;
+  animation: contact-route-signal 6s linear infinite;
+}
+@keyframes contact-route-signal {
+  to {
+    stroke-dashoffset: -320;
+  }
+}
+.contact-location-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  color: #999;
+  font: 10px var(--font-tech);
+  letter-spacing: 0.06em;
+}
+.contact-location-meta time {
+  font-size: 18px;
+  color: #ddd;
+  font-variant-numeric: tabular-nums;
+}
+.contact-station .contact-dock-panel {
+  background: #101010;
+  width: min(100%, 460px);
+  justify-self: end;
+}
+.contact-station .contact-dock-mail {
+  min-height: 0;
+  justify-content: space-between;
+  padding: 22px;
+  gap: 16px;
+}
+.contact-station .contact-dock-action {
+  font-size: clamp(28px, 2.5vw, 36px);
+}
+.contact-station .contact-dock-glyph {
+  width: 42px;
+  height: 42px;
+}
+.contact-routing-control {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: left;
+}
+.contact-test-label {
+  display: block;
+  color: #999;
+  font: 8px var(--font-tech);
+  letter-spacing: 0.08em;
+  margin-top: 6px;
+}
+.contact-routing-control:hover .contact-test-label {
+  color: var(--theme-accent);
+}
+.contact-test-signal circle {
+  fill: none;
+  stroke: var(--theme-accent);
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: contact-test-ping 1.4s ease-out both;
+}
+.contact-test-signal circle:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.contact-test-signal circle:nth-child(3) {
+  animation-delay: 0.6s;
+}
+@keyframes contact-test-ping {
+  from {
+    scale: 0.2;
+    opacity: 1;
+  }
+  to {
+    scale: 2;
+    opacity: 0;
+  }
+}
+.contact-station .contact-dock-copy {
+  min-height: 50px;
+  padding-inline: 30px;
+}
+.contact-resume {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 30px;
+  border-top: 1px solid #ffffff18;
+  transition:
+    background 0.25s,
+    color 0.25s;
+}
+.contact-resume > span {
+  display: grid;
+  gap: 7px;
+}
+.contact-resume-label {
+  font: 9px var(--font-tech);
+  color: #999;
+  letter-spacing: 0.08em;
+}
+.contact-resume strong {
+  font: 400 18px var(--font-sans);
+}
+.contact-resume:hover,
+.contact-resume:focus-visible {
+  background: #ffffff05;
+  color: var(--theme-accent);
+}
+.contact-station .contact-dock-links {
+  grid-template-columns: 0.5fr repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+.contact-station .contact-dock-route {
+  min-height: 76px;
+}
+.contact-channel-copy {
+  display: grid;
+  gap: 8px;
+}
+.contact-channel-copy small {
+  font: 11px var(--font-sans);
+  color: #999;
+}
+@media (max-width: 767px) {
+  .contact-station {
+    padding: 24px 22px 32px;
+  }
+  .contact-station .contact-dock-inner {
+    min-height: 0;
+  }
+  .contact-station .contact-dock-grid {
+    gap: 28px;
+    padding-block: 28px;
+  }
+  .contact-station .contact-dock-identity {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0 10px;
+  }
+  .contact-station .contact-dock-reveal {
+    font-size: clamp(26px, 8vw, 54px);
+  }
+  .contact-station .contact-dock-signature,
+  .contact-location {
+    grid-column: 1 / -1;
+  }
+  .contact-station .contact-dock-signature {
+    margin-top: 14px;
+    font-size: 10px;
+  }
+  .contact-location {
+    margin-top: 18px;
+    max-width: none;
+  }
+  .contact-routing {
+    height: 45px;
+  }
+  .contact-station .contact-dock-mail {
+    min-height: 0;
+    padding: 24px;
+  }
+  .contact-station .contact-dock-copy,
+  .contact-resume {
+    padding-inline: 24px;
+  }
+  .contact-station .contact-dock-panel {
+    justify-self: stretch;
+    width: 100%;
+  }
+  .contact-station .contact-dock-links {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .contact-station .contact-dock-links-label {
+    padding-block: 20px 6px;
+  }
+  .contact-station .contact-dock-route {
+    min-height: 76px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .contact-routing .contact-routing-pulse {
+    animation: none;
+  }
+  .contact-test-signal circle {
+    animation: none;
+    opacity: 0.5;
+  }
+}
