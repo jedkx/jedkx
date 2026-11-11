@@ -1,20 +1,20 @@
 [
   {
-    "name": "jedkx-cli",
-    "description": "Terminal app that lists every Claude Code and Codex chat on your machine and reopens it in a pane or tab.",
-    "language": "Go",
-    "html_url": "https://github.com/jedkx/jedkx-cli",
-    "pushed_at": "2026-11-11T11:00:08Z",
+    "name": "jedkx",
+    "description": "Caner Coşkun — terminal profile, original pixel resident and contribution arcade.",
+    "language": "JavaScript",
+    "html_url": "https://github.com/jedkx/jedkx",
+    "pushed_at": "2026-11-11T14:23:22Z",
     "stargazers_count": 0,
     "fork": false,
     "archived": false
   },
   {
-    "name": "jedkx",
-    "description": "Caner Coşkun — terminal profile, original pixel resident and contribution arcade.",
-    "language": "JavaScript",
-    "html_url": "https://github.com/jedkx/jedkx",
-    "pushed_at": "2026-11-11T06:13:31Z",
+    "name": "jedkx-cli",
+    "description": "Terminal app that lists every Claude Code and Codex chat on your machine and reopens it in a pane or tab.",
+    "language": "Go",
+    "html_url": "https://github.com/jedkx/jedkx-cli",
+    "pushed_at": "2026-11-11T11:00:08Z",
     "stargazers_count": 0,
     "fork": false,
     "archived": false
