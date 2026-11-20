@@ -1,10 +1,20 @@
 [
   {
+    "name": "aseprite-ai-artist",
+    "description": "Your coding agent paints pixel art in the Aseprite window you already have open. MCP server + skills for Claude Code, omp, Codex, Gemini CLI and Cursor — draws, looks at its work, animates and exports. Gallery and benchmark: pixeli.pebbly.space",
+    "language": null,
+    "html_url": "https://github.com/jedkx/aseprite-ai-artist",
+    "pushed_at": "2026-11-20T07:40:58Z",
+    "stargazers_count": 0,
+    "fork": true,
+    "archived": false
+  },
+  {
     "name": "jedkx",
     "description": "Caner Coşkun — terminal profile, original pixel resident and contribution arcade.",
     "language": "JavaScript",
     "html_url": "https://github.com/jedkx/jedkx",
-    "pushed_at": "2026-11-19T21:30:45Z",
+    "pushed_at": "2026-11-20T03:12:09Z",
     "stargazers_count": 0,
     "fork": false,
     "archived": false
